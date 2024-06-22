@@ -1742,7 +1742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719061124998),
+    lastupdate: new Date(1719062415004),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2548,15 +2548,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/2024/06/21/hello-world/"  itemprop="url">
-        Hello World
+        hadoop面试题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        HDFS1.HDFS的存储机制（读写流程）总体：
+
+按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上
+三副本机制：为了保证HDFS的数据的安全性，避免数据丢失，HDFS对每个块数据进行备份，默认情况下块数据会存储3份，叫做三副本，副本块存储在不同服务器上
+默认存储策略由BlockPlacementPolicyDefault类支...
       
     
   </div>
