@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-06-21T08:21:59.974Z">
-<meta property="article:modified_time" content="2024-06-22T13:52:52.178Z">
+<meta property="article:modified_time" content="2024-06-23T06:23:54.792Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1744,7 +1744,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719064573824),
+    lastupdate: new Date(1719123909046),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2884,12 +2884,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 <h2 id="11-如果没有定义partitioner-，那数据在被送达reducer前是如何被分区的？"><a href="#11-如果没有定义partitioner-，那数据在被送达reducer前是如何被分区的？" class="headerlink" title="11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？"></a>11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？</h2><blockquote>
-<p>如果没有自定义的 partitioning，则默认的 partition 算法，即根据每一条数据的 key的 hashcode 值模运算（%）reduce 的数量 ，得到的数字就是“分区号”。</p>
+<p>如果没有自定义的 partitioning，则默认的 partition 算法。</p>
+<ul>
+<li><p>先对每一条数据的键(key)进行哈希运算</p>
+</li>
+<li><p>然后，将得到的哈希值对 Reducer 的总数进行取模运算 ，</p>
+</li>
+<li><p>取模运算的结果决定了每个键值对应该发送到哪个 Reducer,也就是分区号</p>
+</li>
+</ul>
 </blockquote>
 <h2 id="12-有可能使-Hadoop-任务输出到多个目录中么？如果可以-，怎么做？"><a href="#12-有可能使-Hadoop-任务输出到多个目录中么？如果可以-，怎么做？" class="headerlink" title="12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？"></a>12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？</h2><blockquote>
 <p>可以输出到多个目录中 ，采用自定义OutputFormat  </p>
 <p>实现步骤：</p>
-<p>（1） 自定义outputformat</p>
+<p>（1）自定义outputformat</p>
 <p>（2）改写recordwriter ，具体改写输出数据的方法write()  </p>
 </blockquote>
 
@@ -2916,10 +2924,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-22T21:52:52+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-23T14:23:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年6月22日</p>
+    <p>更新于：2024年6月23日</p>
   </a>
 </div>
 
@@ -3616,7 +3624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"my blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/06/21/hello-world/","name":"hadoop面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"my blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hadoop面试题","description":"个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/06/21/hello-world/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/06/21/hello-world/","wordCount":0,"datePublished":"2024-06-21T08:21:59.974Z","dateModified":"2024-06-22T13:52:52.178Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"my blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/06/21/hello-world/","name":"hadoop面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"my blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hadoop面试题","description":"个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/06/21/hello-world/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/06/21/hello-world/","wordCount":0,"datePublished":"2024-06-21T08:21:59.974Z","dateModified":"2024-06-23T06:23:54.792Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
