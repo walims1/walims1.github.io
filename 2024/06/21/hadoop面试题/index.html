@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://walims.xyz/2024/06/21/hello-world/"/>
+  <link rel="canonical" href="https://walims.xyz/2024/06/21/hadoop面试题/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -40,13 +40,13 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="hadoop面试题">
-<meta property="og:url" content="https://walims.xyz/2024/06/21/hello-world/index.html">
+<meta property="og:url" content="https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="码猿不正经">
 <meta property="og:description" content="HDFS1.HDFS的存储机制（读写流程）总体：  按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上 三副本机制：为了保证HDFS的数据的安全性，避免数据丢失，HDFS对每个块数据进行备份，默认情况下块数据会存储3份，叫做三副本，副本块存储在不同服务器上 默认存储策略由BlockPlacementPolicyDefault类支持。也">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-06-21T08:21:59.974Z">
-<meta property="article:modified_time" content="2024-06-23T06:23:54.792Z">
+<meta property="article:modified_time" content="2024-06-24T16:39:50.300Z">
 <meta property="article:author" content="walims">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1629,7 +1629,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719216848668),
+    lastupdate: new Date(1719247223680),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2348,7 +2348,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/21/hello-world/">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/21/hadoop面试题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="码猿不正经">
   </span>
@@ -2731,6 +2731,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>（1）自定义outputformat</p>
 <p>（2）改写recordwriter ，具体改写输出数据的方法write()  </p>
 </blockquote>
+<h1 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h1><h2 id="1-简述Hadoop1与Hadoop2的架构异同"><a href="#1-简述Hadoop1与Hadoop2的架构异同" class="headerlink" title="1.简述Hadoop1与Hadoop2的架构异同"></a>1.简述Hadoop1与Hadoop2的架构异同</h2><ul>
+<li>加入了yarn解决了资源调度的问题</li>
+<li>加入了对zookeeper的支持实现比较可靠的高可用</li>
+</ul>
+<h2 id="2-为什么会产生yarn-它解决了什么问题，有什么优势？"><a href="#2-为什么会产生yarn-它解决了什么问题，有什么优势？" class="headerlink" title="2.为什么会产生yarn,它解决了什么问题，有什么优势？"></a>2.为什么会产生yarn,它解决了什么问题，有什么优势？</h2><ul>
+<li>解决的问题：Yarn最主要的功能就是解决运行的用户程序与yarn框架完全解耦</li>
+<li>优势：Yarn上可以运行各种类型的分布式运算程序（mapreduce只是其中的一种），比如mapreduce、storm程序，spark程序….</li>
+</ul>
 
   </div>
   
@@ -2755,10 +2763,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-23T14:23:54+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-25T00:39:50+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年6月23日</p>
+    <p>更新于：2024年6月25日</p>
   </a>
 </div>
 
@@ -2777,7 +2785,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/21/hello-world/&title=hadoop面试题 - 码猿不正经&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/&title=hadoop面试题 - 码猿不正经&summary="
           
           >
           
@@ -2789,7 +2797,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/21/hello-world/&title=hadoop面试题 - 码猿不正经&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/&title=hadoop面试题 - 码猿不正经&summary="
           
           >
           
@@ -2801,7 +2809,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/21/hello-world/&title=hadoop面试题 - 码猿不正经&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/&title=hadoop面试题 - 码猿不正经&summary="
           
           >
           
@@ -2843,7 +2851,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/06/21/hello-world/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2885,7 +2893,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HDFS%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6%EF%BC%88%E8%AF%BB%E5%86%99%E6%B5%81%E7%A8%8B%EF%BC%89"><span class="toc-text">1.HDFS的存储机制（读写流程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Secondary-NameNode%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">2.Secondary NameNode工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-NameNode%E4%B8%8ESecondaryNameNode%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB%EF%BC%9F"><span class="toc-text">3.NameNode与SecondaryNameNode的区别与联系？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9C%8D%E5%BD%B9%E6%96%B0%E6%95%B0%E6%8D%AE%E8%8A%82%E7%82%B9%E5%92%8C%E9%80%80%E5%BD%B9%E6%97%A7%E8%8A%82%E7%82%B9%E6%AD%A5%E9%AA%A4"><span class="toc-text">4.服役新数据节点和退役旧节点步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-NameNode%E6%8C%82%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">5.NameNode挂了怎么办</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Hadoop%E7%9A%84NameNode%E5%AE%95%E6%9C%BA%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-text">6.Hadoop的NameNode宕机怎么解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%B0%88%E8%B0%88Hadoop%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89bean%E5%AF%B9%E8%B1%A1%E5%AE%9E%E7%8E%B0%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%9F"><span class="toc-text">1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-FileInputFormat%E5%88%87%E7%89%87%E6%9C%BA%E5%88%B6"><span class="toc-text">2.FileInputFormat切片机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89InputFormat%E6%B5%81%E7%A8%8B"><span class="toc-text">3.自定义InputFormat流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E4%B8%80%E4%B8%AAjob%E7%9A%84map%E5%92%8Creduce%E7%9A%84%E6%95%B0%E9%87%8F"><span class="toc-text">4.如何决定一个job的map和reduce的数量?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MapTask%E7%9A%84%E4%B8%AA%E6%95%B0%E7%94%B1%E4%BB%80%E4%B9%88%E5%86%B3%E5%AE%9A"><span class="toc-text">5.MapTask的个数由什么决定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-MapTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">6.MapTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-ReduceTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">7.ReduceTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E6%9C%89%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E5%8F%8A%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">8.请描述mapReduce有几种排序及排序发生的阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">排序的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">排序发生的阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8FWritableComparable"><span class="toc-text">自定义排序WritableComparable</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E4%B8%ADshuffle%E9%98%B6%E6%AE%B5%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96shuffle%E9%98%B6%E6%AE%B5"><span class="toc-text">9.请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%AF%B7%E6%8F%8F%E8%BF%B0MapReduce%E4%B8%ADcombiner%E7%9A%84%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E4%B8%80%E8%88%AC%E4%BD%BF%E7%94%A8%E6%83%85%E6%99%AF%EF%BC%8C%E5%93%AA%E4%BA%9B%E6%83%85%E5%86%B5%E4%B8%8D%E9%9C%80%E8%A6%81%EF%BC%8C%E5%8F%8A%E5%92%8Creduce%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">10.请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%AE%9A%E4%B9%89partitioner-%EF%BC%8C%E9%82%A3%E6%95%B0%E6%8D%AE%E5%9C%A8%E8%A2%AB%E9%80%81%E8%BE%BEreducer%E5%89%8D%E6%98%AF%E5%A6%82%E4%BD%95%E8%A2%AB%E5%88%86%E5%8C%BA%E7%9A%84%EF%BC%9F"><span class="toc-text">11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E6%9C%89%E5%8F%AF%E8%83%BD%E4%BD%BF-Hadoop-%E4%BB%BB%E5%8A%A1%E8%BE%93%E5%87%BA%E5%88%B0%E5%A4%9A%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%AD%E4%B9%88%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%8F%AF%E4%BB%A5-%EF%BC%8C%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F"><span class="toc-text">12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HDFS%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6%EF%BC%88%E8%AF%BB%E5%86%99%E6%B5%81%E7%A8%8B%EF%BC%89"><span class="toc-text">1.HDFS的存储机制（读写流程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Secondary-NameNode%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">2.Secondary NameNode工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-NameNode%E4%B8%8ESecondaryNameNode%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB%EF%BC%9F"><span class="toc-text">3.NameNode与SecondaryNameNode的区别与联系？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9C%8D%E5%BD%B9%E6%96%B0%E6%95%B0%E6%8D%AE%E8%8A%82%E7%82%B9%E5%92%8C%E9%80%80%E5%BD%B9%E6%97%A7%E8%8A%82%E7%82%B9%E6%AD%A5%E9%AA%A4"><span class="toc-text">4.服役新数据节点和退役旧节点步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-NameNode%E6%8C%82%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">5.NameNode挂了怎么办</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Hadoop%E7%9A%84NameNode%E5%AE%95%E6%9C%BA%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-text">6.Hadoop的NameNode宕机怎么解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%B0%88%E8%B0%88Hadoop%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89bean%E5%AF%B9%E8%B1%A1%E5%AE%9E%E7%8E%B0%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%9F"><span class="toc-text">1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-FileInputFormat%E5%88%87%E7%89%87%E6%9C%BA%E5%88%B6"><span class="toc-text">2.FileInputFormat切片机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89InputFormat%E6%B5%81%E7%A8%8B"><span class="toc-text">3.自定义InputFormat流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E4%B8%80%E4%B8%AAjob%E7%9A%84map%E5%92%8Creduce%E7%9A%84%E6%95%B0%E9%87%8F"><span class="toc-text">4.如何决定一个job的map和reduce的数量?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MapTask%E7%9A%84%E4%B8%AA%E6%95%B0%E7%94%B1%E4%BB%80%E4%B9%88%E5%86%B3%E5%AE%9A"><span class="toc-text">5.MapTask的个数由什么决定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-MapTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">6.MapTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-ReduceTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">7.ReduceTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E6%9C%89%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E5%8F%8A%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">8.请描述mapReduce有几种排序及排序发生的阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">排序的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">排序发生的阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8FWritableComparable"><span class="toc-text">自定义排序WritableComparable</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E4%B8%ADshuffle%E9%98%B6%E6%AE%B5%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96shuffle%E9%98%B6%E6%AE%B5"><span class="toc-text">9.请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%AF%B7%E6%8F%8F%E8%BF%B0MapReduce%E4%B8%ADcombiner%E7%9A%84%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E4%B8%80%E8%88%AC%E4%BD%BF%E7%94%A8%E6%83%85%E6%99%AF%EF%BC%8C%E5%93%AA%E4%BA%9B%E6%83%85%E5%86%B5%E4%B8%8D%E9%9C%80%E8%A6%81%EF%BC%8C%E5%8F%8A%E5%92%8Creduce%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">10.请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%AE%9A%E4%B9%89partitioner-%EF%BC%8C%E9%82%A3%E6%95%B0%E6%8D%AE%E5%9C%A8%E8%A2%AB%E9%80%81%E8%BE%BEreducer%E5%89%8D%E6%98%AF%E5%A6%82%E4%BD%95%E8%A2%AB%E5%88%86%E5%8C%BA%E7%9A%84%EF%BC%9F"><span class="toc-text">11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E6%9C%89%E5%8F%AF%E8%83%BD%E4%BD%BF-Hadoop-%E4%BB%BB%E5%8A%A1%E8%BE%93%E5%87%BA%E5%88%B0%E5%A4%9A%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%AD%E4%B9%88%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%8F%AF%E4%BB%A5-%EF%BC%8C%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F"><span class="toc-text">12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%AE%80%E8%BF%B0Hadoop1%E4%B8%8EHadoop2%E7%9A%84%E6%9E%B6%E6%9E%84%E5%BC%82%E5%90%8C"><span class="toc-text">1.简述Hadoop1与Hadoop2的架构异同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E4%BA%A7%E7%94%9Fyarn-%E5%AE%83%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF%EF%BC%9F"><span class="toc-text">2.为什么会产生yarn,它解决了什么问题，有什么优势？</span></a></li></ol>
     </div>
   </section>
 
@@ -3473,7 +3481,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/21/hello-world/","name":"hadoop面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hadoop面试题","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/21/hello-world/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/21/hello-world/","wordCount":0,"datePublished":"2024-06-21T08:21:59.974Z","dateModified":"2024-06-23T06:23:54.792Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/21/hadoop面试题/","name":"hadoop面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hadoop面试题","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/21/hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/","wordCount":0,"datePublished":"2024-06-21T08:21:59.974Z","dateModified":"2024-06-24T16:39:50.300Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
