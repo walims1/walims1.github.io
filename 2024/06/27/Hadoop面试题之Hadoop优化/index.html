@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://walims.xyz/archives/"/>
+  
+  <link rel="canonical" href="https://walims.xyz/2024/06/27/hadoop面试题之hadoop优化/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档 - 码猿不正经</title>
-  <meta name="keywords" content="null">
+  <title>Hadoop面试题之Hadoop优化 - 码猿不正经</title>
+  <meta name="keywords" content="Hadoop,面试题,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="码猿不正经">
-<meta property="og:url" content="https://walims.xyz/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop面试题之Hadoop优化">
+<meta property="og:url" content="https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="码猿不正经">
 <meta property="og:description" content="walims的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-27T11:40:59.000Z">
+<meta property="article:modified_time" content="2024-06-27T13:37:59.216Z">
 <meta property="article:author" content="walims">
+<meta property="article:tag" content="Hadoop">
+<meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2288,7 +2292,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/b6237e7c882711ebb6edd017c2d2eca2.png"></div>
 
@@ -2343,79 +2347,229 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2024</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/">
-									<time>06-27</time>
-									
-										Hadoop面试题之Hadoop优化
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/">
-									<time>06-27</time>
-									
-										Hadoop面试题之Yarn
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/">
-									<time>06-27</time>
-									
-										Hadoop面试题之MapReduce
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/">
-									<time>06-21</time>
-									
-										Hadoop面试题之HDFS
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/Hadoop面试题之Hadoop优化/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="码猿不正经">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="码猿不正经">
+    <meta itemprop="description" content="walims的个人博客">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        Hadoop面试题之Hadoop优化
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年6月27日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-27T21:37:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年6月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
+  <span hidden itemprop="keywords">Hadoop 面试题</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/'>
+          <p class='title'>Hadoop面试题之Yarn<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1.简述Hadoop1与Hadoop2的架构异同
+加入了yarn解决了资源调度的问题
+加入了对zookeeper的支持实现比较可靠的高可用
+
+2.为什么会产生yarn,它解决了什么问题，有什么优...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2424,185 +2578,46 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/vue-color-avatar2.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">码猿不正经</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:walimslv@gmail.com#你的邮箱"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/walims1"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            active-action="action-categoriesHadoopE99DA2E8AF95E9A298"
-            ><div class='name'>Hadoop面试题</div><div class='badge'>(4)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Hadoop/" style="font-size: 14px; color: #999">Hadoop</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 14px; color: #999">面试题</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>4 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-06-27 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Hadoop优化</span></a></li><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Yarn</span></a></li><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之MapReduce</span></a></li><li><a class="widget-last" href="/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之HDFS</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2626,13 +2641,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3160,7 +3176,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Hadoop面试题/","name":"Hadoop面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/27/Hadoop面试题之Hadoop优化/","name":"Hadoop面试题之Hadoop优化"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hadoop面试题之Hadoop优化","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/","wordCount":0,"datePublished":"2024-06-27T11:40:59.000Z","dateModified":"2024-06-27T13:37:59.216Z","articleSection":"Hadoop面试题","keywords":"Hadoop,面试题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

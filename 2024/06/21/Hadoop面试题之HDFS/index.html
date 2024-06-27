@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://walims.xyz/archives/"/>
+  
+  <link rel="canonical" href="https://walims.xyz/2024/06/21/hadoop面试题之hdfs/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档 - 码猿不正经</title>
-  <meta name="keywords" content="null">
+  <title>Hadoop面试题之HDFS - 码猿不正经</title>
+  <meta name="keywords" content="Hadoop,面试题,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="码猿不正经">
-<meta property="og:url" content="https://walims.xyz/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop面试题之HDFS">
+<meta property="og:url" content="https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/index.html">
 <meta property="og:site_name" content="码猿不正经">
-<meta property="og:description" content="walims的个人博客">
+<meta property="og:description" content="1.HDFS的存储机制（读写流程）总体：  按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上 三副本机制：为了保证HDFS的数据的安全性，避免数据丢失，HDFS对每个块数据进行备份，默认情况下块数据会存储3份，叫做三副本，副本块存储在不同服务器上 默认存储策略由BlockPlacementPolicyDefault类支持。也就是日常">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-21T08:21:59.974Z">
+<meta property="article:modified_time" content="2024-06-27T13:37:25.470Z">
 <meta property="article:author" content="walims">
+<meta property="article:tag" content="Hadoop">
+<meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2288,7 +2292,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/b6237e7c882711ebb6edd017c2d2eca2.png"></div>
 
@@ -2343,79 +2347,348 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2024</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/">
-									<time>06-27</time>
-									
-										Hadoop面试题之Hadoop优化
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/">
-									<time>06-27</time>
-									
-										Hadoop面试题之Yarn
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/">
-									<time>06-27</time>
-									
-										Hadoop面试题之MapReduce
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/">
-									<time>06-21</time>
-									
-										Hadoop面试题之HDFS
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/21/Hadoop面试题之HDFS/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="码猿不正经">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="码猿不正经">
+    <meta itemprop="description" content="walims的个人博客">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        Hadoop面试题之HDFS
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-21T16:21:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年6月21日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="1-HDFS的存储机制（读写流程）"><a href="#1-HDFS的存储机制（读写流程）" class="headerlink" title="1.HDFS的存储机制（读写流程）"></a>1.HDFS的存储机制（读写流程）</h2><p><strong>总体：</strong></p>
+<ul>
+<li>按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上</li>
+<li>三副本机制：为了保证HDFS的数据的安全性，避免数据丢失，HDFS对每个块数据进行备份，默认情况下块数据会存储3份，叫做三副本，副本块存储在不同服务器上<ul>
+<li>默认存储策略由<strong>BlockPlacementPolicyDefault</strong>类支持。也就是日常生活中提到最经典的3副本策略。</li>
+<li>1st replica 如果写请求方所在机器是其中一个datanode,则直接存放在本地,否则随机在集群中选择一个datanode.</li>
+<li>2nd replica 第二个副本存放于不同第一个副本的所在的机架</li>
+<li>3rd replica 第三个副本存放于第二个副本所在的机架,但是属于不同的服务器节点</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>写入数据流程：</strong></p>
+<p>1）客户端向NameNode请求上传文件 ，NameNode检查目标文件是否已存在 ，父目录是否存在。</p>
+<p>2）NameNode返回是否可以上传。</p>
+<p>3）客户端请求第一个 block上传到哪几个datanode服务器上。</p>
+<p>4）NameNode返回3个datanode节点 ，分别为dn1、dn2、dn3。</p>
+<p>5）客户端请求dn1上传数据 ，dn1收到请求会继续调用dn2 ，然后dn2调用dn3 ，将这个通信管道建立完成。</p>
+<p>6）dn1、dn2、dn3逐级应答客户端</p>
+<p>7）客户端开始往dn1上传第一个block（先从磁盘读取数据放到一个本地内存缓存），以packet为单位 ，dn1 收到一个packet就会传给dn2 ，dn2传给dn3；dn1每传一个packet会放入一个应答队列等待应答</p>
+<p>8）当一个block传输完成之后 ，客户端再次请求NameNode上传第二个block的服务器。（重复执行3-7步）</p>
+</blockquote>
+<blockquote>
+<p><strong>读取数据流程：</strong></p>
+<p>1）客户端向NameNode请求下载文件 ，NameNode通过查询元数据 ，找到文件块所在的datanode地址。</p>
+<p>2）挑选一台datanode（就近原则 ，然后随机）服务器 ，请求读取数据。</p>
+<p>3）datanode开始传输数据给客户端（从磁盘里面读取数据放入流 ，以packet为单位来做校验）。</p>
+<p>4）客户端以packet为单位接收 ，先在本地缓存 ，然后写入目标文件。</p>
+</blockquote>
+<h2 id="2-Secondary-NameNode工作机制"><a href="#2-Secondary-NameNode工作机制" class="headerlink" title="2.Secondary NameNode工作机制"></a>2.Secondary NameNode工作机制</h2><p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xtaDQ1MDIwMTU5OA==,size_16,color_FFFFFF,t_70.jpeg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xtaDQ1MDIwMTU5OA==,size_16,color_FFFFFF,t_70.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="NameNode&amp;Secondary NameNode工作机制"></p>
+<p>NameNode管理着元数据信息，其中有两类持久化元数据文件：edits操作日志文件和fsimage元数据镜像文件。新的操作日志不会立即与fsimage进行合并，也不会刷到NameNode的内存中，而是会先写到edits中(因为合并需要消耗大量的资源)，操作成功之后更新至内存</p>
+<p>SecondaryNameNode有两个作用，一是镜像备份，二是日志与镜像的定期合并。两个过程同时进行，称为checkpoint（检查点）。</p>
+<p>这个过程大体就是三个步骤：拷贝、合并、替换</p>
+<p>fsimage是存储文件系统的快照（元数据镜像文件）</p>
+<ul>
+<li>fsimage文件其实是Hadoop文件系统元数据的一个永久性的检查点，其中包含Hadoop文件系统中的所有目录和文件idnode的序列化信息；fsimage包含Hadoop文件系统中的所有目录和文件idnode的序列化信息；对于文件来说，包含的信息有修改时间、访问时间、块大小和组成一个文件块信息等；而对于目录来说，包含的信息主要有修改时间、访问控制权限等信息。</li>
+</ul>
+<p>edits记录对文件系统的更改，也就是编辑日志，存放的是Hadoop文件系统的所有更新操作的路径，文件系统客户端执行的所以写操作首先会被记录到edits文件中</p>
+<p>checkpoint机制的触发条件：</p>
+<ul>
+<li><p>checkpoint机制是secondname和NameNode之间的数据操作</p>
+</li>
+<li><p>该机制决定了secondname什么时候进行元数据的持久化保存</p>
+</li>
+<li><p>条件一 距离上一次保存时间过去了1个小时</p>
+</li>
+<li><p>条件二 文件的事务操作(文件写入，文件修改，文件删除)达到了100万次</p>
+</li>
+<li><p>两个条件任意一个满足就执行checkpoint</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>第一阶段：NameNode启动</strong></p>
+<p>（1）第一次启动NameNode格式化后 ，创建fsimage和edits文件。如果不是第一次启动 ，直接加载编辑日志和镜像文件到内存。</p>
+<p>（2）客户端对元数据进行增删改的请求</p>
+<p>（3）NameNode记录操作日志 ，更新滚动日志。</p>
+<p>（4）NameNode在内存中对数据进行增删改查</p>
+<p><strong>第二阶段：</strong>SecondaryNameNode工作：</p>
+<p>（1）Secondary NameNode询问NameNode是否需要checkpoint。直接带回NameNode是否检查结果。</p>
+<p>（2）Secondary NameNode请求执行checkpoint。</p>
+<p>（3）NameNode滚动正在写的edits日志</p>
+<p>（4）将滚动前的编辑日志和镜像文件拷贝到Secondary NameNode</p>
+<p>（5）Secondary NameNode加载编辑日志和镜像文件到内存 ，并合并。</p>
+<p>（6）生成新的镜像文件fsimage.chkpoint</p>
+<p>（7）拷贝fsimage.chkpoint到NameNode</p>
+<p>（8）NameNode将fsimage.chkpoint重新命名成fsimage</p>
+</blockquote>
+<h2 id="3-NameNode与SecondaryNameNode的区别与联系？"><a href="#3-NameNode与SecondaryNameNode的区别与联系？" class="headerlink" title="3.NameNode与SecondaryNameNode的区别与联系？"></a>3.NameNode与SecondaryNameNode的区别与联系？</h2><blockquote>
+<p>机制流程同上</p>
+<p><strong>区别：</strong></p>
+<ol>
+<li>NameNode负责管理整个文件系统的元数据，以及每一个路径（文件）所对应的数据块信息。</li>
+<li>SecondaryNameNode主要用于定期合并命名空间镜像和命名空间镜像的编辑日志。</li>
+</ol>
+<p><strong>联系：</strong></p>
+<ol>
+<li>SecondaryNameNode中保存了一份和NameNode一致的镜像文件（fsimage）和日志文件（edits）。</li>
+<li>在主NameNode发生故障时（假设没有及时备份数据），可以从SecondaryNameNode恢复数据。</li>
+</ol>
+</blockquote>
+<h2 id="4-服役新数据节点和退役旧节点步骤"><a href="#4-服役新数据节点和退役旧节点步骤" class="headerlink" title="4.服役新数据节点和退役旧节点步骤"></a>4.服役新数据节点和退役旧节点步骤</h2><blockquote>
+<p><strong>节点上线操作：</strong></p>
+<p>当要新上线数据节点的时候，需要把数据节点的名字追加在 dfs.hosts 文件中</p>
+<p>（1）关闭新增节点的防火墙</p>
+<p>（2）在 NameNode 节点的 hosts 文件中加入新增数据节点的 hostname</p>
+<p>（3）在每个新增数据节点的 hosts 文件中加入 NameNode 的 hostname</p>
+<p>（4）在 NameNode 节点上增加新增节点的 SSH 免密码登录的操作</p>
+<p>（5）在 NameNode 节点上的 dfs.hosts 中追加上新增节点的 hostname,</p>
+<p>（6）在其他节点上执行刷新操作：hdfs dfsadmin -refreshNodes</p>
+<p>（7）在 NameNode 节点上，更改 slaves 文件，将要上线的数据节点 hostname 追加到 slaves 文件中</p>
+<p>（8）启动 DataNode 节点</p>
+<p>（9）查看 NameNode 的监控页面看是否有新增加的节点</p>
+<p><strong>节点下线操作：</strong></p>
+<p>（1）修改&#x2F;conf&#x2F;hdfs-site.xml 文件</p>
+<p>（2）确定需要下线的机器，dfs.osts.exclude 文件中配置好需要下架的机器，这个是阻止下架的机器去连接 NameNode。</p>
+<p>（3）配置完成之后进行配置的刷新操作.&#x2F;bin&#x2F;hadoop dfsadmin -refreshNodes,这个操作的作用是在后台进行 block 块的移动。</p>
+<p>（4）当执行三的命令完成之后，需要下架的机器就可以关闭了，可以查看现在集群上连接的节点，正在执行 Decommission，会显示：Decommission Status : Decommission in progress 执行完毕后，会显示：Decommission Status : Decommissionedasdad</p>
+<p>（5）机器下线完毕，将他们从excludes 文件中移除。</p>
+</blockquote>
+<h2 id="5-NameNode挂了怎么办"><a href="#5-NameNode挂了怎么办" class="headerlink" title="5.NameNode挂了怎么办"></a>5.NameNode挂了怎么办</h2><blockquote>
+<p><strong>方法一</strong>：将SecondaryNameNode中数据拷贝到namenode存储数据的目录；</p>
+<p><strong>方法二</strong>：使用-importCheckpoint选项启动namenode守护进程 ，从而将SecondaryNameNode中数据拷贝到namenode目录中。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;步骤如下：拿一台和原来机器一样的机器，包括配置和文件，一般来说最快的是拿你节点机器中的一台，立马能用（部分配置要改成NameNode的配置）创建一个空的文件夹，该文件夹就是配置文件中dfs.name.dir所指向的文件夹。拷贝你的secondary NameNode checkpoint出来的文件，到某个文件夹，该文件夹为fs.checkpoint.dir指向的文件夹执行命令bin/hadoop namenode -importCheckpoint这样NameNode会读取checkpoint文件，保存到dfs.name.dir。但是如果你的dfs.name.dir包含合法的fsimage，是会执行失败的。因为NameNode会检查fs.checkpoint.dir目录下镜像的一致性，但是不会去改动它</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="6-Hadoop的NameNode宕机怎么解决"><a href="#6-Hadoop的NameNode宕机怎么解决" class="headerlink" title="6.Hadoop的NameNode宕机怎么解决"></a>6.Hadoop的NameNode宕机怎么解决</h2><p>如果只是节点挂了 ，重启即可 ，如果是机器挂了 ，重启机器后看节点是否能重启 ，不能重启就要找到原因修复了  </p>
+<blockquote>
+<ol>
+<li><p>先看宕机后的损失如何，如果是内存中的数据丢失，但磁盘数据还在，可以将 secondary namenode 的工作目录 copy 到 namenode 的工作目录中，恢复上一次 checkpoint 的数据，这样可以恢复大部分数据，但不能恢复所有数据，因为有些数据还没做 checkpoint。</p>
+</li>
+<li><p>也可以设置 namenode 的工作目录在多块磁盘上，那么 edits 日志文件就会同时写在多块磁盘上，如果一个磁盘坏了，那另一块磁盘上仍保存着数据。这两个磁盘是可以并发的，磁盘 IO 不会起冲突。</p>
+</li>
+<li><p>最终解决方案是在建立集群初期的时候建立 NameNode HA 高可用模式。</p>
+</li>
+</ol>
+<ul>
+<li><p>HA机制通过配置两个NameNode节点，一个作为Active NameNode，另一个作为Standby NameNode，共同承担元数据管理的职责。Active NameNode负责处理客户端的请求，而Standby NameNode则作为热备节点，实时同步Active NameNode的元数据，确保在Active NameNode发生故障时能够迅速接管其职责。</p>
+<p>实现NameNode的HA机制，需要依赖一些关键组件和技术，如ZKFailoverController和Zookeeper集群。ZKFailoverController负责监控NameNode的健康状况，并在主NameNode故障时借助Zookeeper实现自动的主备选举和切换。Zookeeper集群则为主备切换控制器提供主备选举支持，确保切换过程的高可用性和可靠性。</p>
+</li>
+</ul>
+</blockquote>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-27T21:37:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年6月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
+  <span hidden itemprop="keywords">Hadoop 面试题</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/&title=Hadoop面试题之HDFS - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/&title=Hadoop面试题之HDFS - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/&title=Hadoop面试题之HDFS - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hadoop面试题之MapReduce</p>
+          <p class='content'>1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？
+https://blog.csdn.net/klionl/article/details/105395340
+
+序列化概述...</p>
+        </a>
+      
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2424,185 +2697,56 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/vue-color-avatar2.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">码猿不正经</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:walimslv@gmail.com#你的邮箱"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/walims1"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            active-action="action-categoriesHadoopE99DA2E8AF95E9A298"
-            ><div class='name'>Hadoop面试题</div><div class='badge'>(4)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Hadoop/" style="font-size: 14px; color: #999">Hadoop</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 14px; color: #999">面试题</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>4 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-06-27 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Hadoop优化</span></a></li><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Yarn</span></a></li><li><a class="widget-last" href="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之MapReduce</span></a></li><li><a class="widget-last" href="/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之HDFS</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HDFS%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6%EF%BC%88%E8%AF%BB%E5%86%99%E6%B5%81%E7%A8%8B%EF%BC%89"><span class="toc-text">1.HDFS的存储机制（读写流程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Secondary-NameNode%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">2.Secondary NameNode工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-NameNode%E4%B8%8ESecondaryNameNode%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB%EF%BC%9F"><span class="toc-text">3.NameNode与SecondaryNameNode的区别与联系？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9C%8D%E5%BD%B9%E6%96%B0%E6%95%B0%E6%8D%AE%E8%8A%82%E7%82%B9%E5%92%8C%E9%80%80%E5%BD%B9%E6%97%A7%E8%8A%82%E7%82%B9%E6%AD%A5%E9%AA%A4"><span class="toc-text">4.服役新数据节点和退役旧节点步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-NameNode%E6%8C%82%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">5.NameNode挂了怎么办</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Hadoop%E7%9A%84NameNode%E5%AE%95%E6%9C%BA%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-text">6.Hadoop的NameNode宕机怎么解决</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2626,13 +2770,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3160,7 +3305,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Hadoop面试题/","name":"Hadoop面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/21/Hadoop面试题之HDFS/","name":"Hadoop面试题之HDFS"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hadoop面试题之HDFS","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/21/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/","wordCount":0,"datePublished":"2024-06-21T08:21:59.974Z","dateModified":"2024-06-27T13:37:25.470Z","articleSection":"Hadoop面试题","keywords":"Hadoop,面试题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
