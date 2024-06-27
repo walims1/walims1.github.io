@@ -1627,7 +1627,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719495649592),
+    lastupdate: new Date(1719496274744),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2389,6 +2389,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
+      
+        1.MapReduce跑得慢的原因Mapreduce程序效率的瓶颈在于两点：
+
+计算机性能：CPU、内存、磁盘健康、网络 
+I&#x2F;O 操作优化：数据倾斜、map和reduce数设置不合理、reduce等待过久、小文件过多、大量的不可分块的超大文件、spill次数过多、merge次数过多等
+
+2.MapReduce优化方法
+      
+    
   </div>
   
     <div class='meta-v3' line_style='solid'>
@@ -2665,28 +2674,6 @@ https://blog.csdn.net/klionl/article/details/105395340
       </div>
     
     
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:walimslv@gmail.com#你的邮箱"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/walims1"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
   </div>
 </section>
 
@@ -2892,15 +2879,6 @@ https://blog.csdn.net/klionl/article/details/105395340
       
         <br>
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          
-            
-              <a href="/atom.xml"
-                class="social fas fa-rss flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-              </a>
-            
           
             
               <a href="mailto:walimslv@gmail.com"
