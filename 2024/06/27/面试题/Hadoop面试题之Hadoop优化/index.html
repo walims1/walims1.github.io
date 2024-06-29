@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://walims.xyz/archives/2024/06/"/>
+  
+  <link rel="canonical" href="https://walims.xyz/2024/06/27/面试题/hadoop面试题之hadoop优化/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2024/6 - 码猿不正经</title>
-  <meta name="keywords" content="null">
+  <title>Hadoop面试题之Hadoop优化 - 码猿不正经</title>
+  <meta name="keywords" content="Hadoop,面试题,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="码猿不正经">
-<meta property="og:url" content="https://walims.xyz/archives/2024/06/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop面试题之Hadoop优化">
+<meta property="og:url" content="https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="码猿不正经">
-<meta property="og:description" content="walims的个人博客">
+<meta property="og:description" content="1.MapReduce跑得慢的原因Mapreduce程序效率的瓶颈在于两点：  计算机性能：CPU、内存、磁盘健康状况以及网络速度都可能影响MapReduce任务的执行效率。 I&#x2F;O 操作优化： 数据倾斜:某些任务由于数据分布不均匀，导致部分任务处理数据量远大于其他任务。 map和reduce数设置不合理:太多或太少的任务可能导致资源竞争或等待时间延长。 reduce等待过久:Map任务">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-27T11:40:59.000Z">
+<meta property="article:modified_time" content="2024-06-29T13:22:41.491Z">
 <meta property="article:author" content="walims">
+<meta property="article:tag" content="Hadoop">
+<meta property="article:tag" content="面试题">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2288,7 +2292,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/b6237e7c882711ebb6edd017c2d2eca2.png"></div>
 
@@ -2343,88 +2347,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/29/算法/算法入门-时间复杂度与空间复杂度/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="码猿不正经">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="码猿不正经">
-    <meta itemprop="description" content="walims的个人博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"  itemprop="url">
-        算法入门-时间复杂度与空间复杂度
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-29T21:50:04+08:00">2024-06-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/面试题/Hadoop面试题之Hadoop优化/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="码猿不正经">
@@ -2434,280 +2357,445 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="walims的个人博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         Hadoop面试题之Hadoop优化
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
     
-      
-        1.MapReduce跑得慢的原因Mapreduce程序效率的瓶颈在于两点：
-
-计算机性能：CPU、内存、磁盘健康状况以及网络速度都可能影响MapReduce任务的执行效率。
-I&#x2F;O 操作优化：
-数据倾斜:某些任务由于数据分布不均匀，导致部分任务处理数据量远大于其他任务。
-map和reduce数设置不合理:太多或太少的任务可能导致资源竞争或等待时间延长。
-reduce等待过久:Ma...
-      
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:59+08:00">2024-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年6月27日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="1-MapReduce跑得慢的原因"><a href="#1-MapReduce跑得慢的原因" class="headerlink" title="1.MapReduce跑得慢的原因"></a>1.MapReduce跑得慢的原因</h2><p>Mapreduce程序效率的瓶颈在于两点：</p>
+<ol>
+<li>计算机性能：<strong>CPU、内存、磁盘健康状况以及网络速度</strong>都可能影响MapReduce任务的执行效率。</li>
+<li>I&#x2F;O 操作优化：<ul>
+<li><strong>数据倾斜</strong>:某些任务由于数据分布不均匀，导致部分任务处理数据量远大于其他任务。</li>
+<li><strong>map和reduce数设置不合理</strong>:太多或太少的任务可能导致资源竞争或等待时间延长。</li>
+<li><strong>reduce等待过久</strong>:Map任务完成后Reduce任务才开始执行，如果Map任务执行时间过长，将导致Reduce等待。</li>
+<li><strong>小文件过多</strong>:HDFS上的小文件过多会增加NameNode的内存负担，并可能导致大量的Map任务。</li>
+<li><strong>大量的不可分块的超大文件</strong>:大文件如果不可分块，将不能有效利用集群的并行处理能力。</li>
+<li><strong>spill次数过多</strong>:Map阶段数据处理时，内存缓冲区溢出到磁盘的次数过多，增加了I&#x2F;O操作。</li>
+<li><strong>merge次数过多</strong>:Map任务结束前，需要将溢写到磁盘的多个文件合并，如果合并次数过多，也会增加处理时间。</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-MapReduce优化方法"><a href="#2-MapReduce优化方法" class="headerlink" title="2.MapReduce优化方法"></a>2.MapReduce优化方法</h2><ol>
+<li><p><strong>数据输入优化：</strong></p>
+<ul>
+<li><strong>合并小文件：</strong>在执行mr任务前将小文件进行合并，大量的小文件会产生大量的map任务，增大map任务装载次数，而任务的装载比较耗时，从而导致mr运行较慢。</li>
+<li>采用<strong>ConbinFilelnputFormat</strong>来作为输入，它可以将多个文件合并成一个单独的 split，解决输入端大量小文件场景。</li>
+</ul>
+</li>
+<li><p><strong>Map阶段优化：</strong></p>
+<ul>
+<li><strong>减少spill次数：</strong>通过调整io.sort.mb及sort.spill.percent参数值，增大触发spil的内存上限，减少spill次数,从而减少磁盘 I&#x2F;O。</li>
+<li><strong>减少merge次数：</strong>通过调整io.sort.factor参数，增大merge的文件数目，减少merge的次数，从而缩短mr处理时间。</li>
+<li>在map之后先进行<strong>combine</strong>处理，减少I&#x2F;O。</li>
+</ul>
+</li>
+<li><p><strong>Reduce阶段优化：</strong></p>
+<ul>
+<li><strong>合理设置map和reduce数：</strong>两个都不能设置太少，也不能设置太多。太少，会导致task等待，延长处理时间；太多，会导致map、reduce任务间竞争资源，造成处理超时等错误。</li>
+<li><strong>设置map、reduce共存：</strong>调整slowstart.completedmaps参数，使map运行到一定程度后，reduce也开始运行，减少reduce的等待时间。</li>
+<li><strong>规避使用reduce以减少网络消耗</strong>，因为Reduce在用于连接数据集的时候将会产生大量的网络消耗。</li>
+<li><strong>合理设置reduc端的buffer</strong> ，默认情况下 ，数据达到一个阈值的时候 ，buffer中的数据就会写入磁盘 ，然后reduce会从磁盘中获得所有的数据。也就是说 ，buffer和reduce是没有直接关联的 ，中间多个一个写磁盘-&gt;读磁盘的过程 ，既然有这个弊端 ，那么就可以通过参数来配置 ，使得buffer中的一部分数据可以直接输送到reduce ，<strong>从而减少IO开销</strong> ：<code>mapred.job.reduce.input.buffer.percent</code> ，默认为0.0。当值大于0的时候 ，会保留指定比例的内存读buffer中的数据直接拿给reduce使用。这样一来 ，设置buffer需要内存 ，读取数据需要内存 ，reduce计算也要内存 ，所以要根据作业的运行情况进行调整。</li>
+</ul>
+</li>
+<li><p><strong>IO传输优化：</strong></p>
+<ul>
+<li>采用数据压缩的方式，减少网络IO的的时间。安装Snappy和LZOP压缩编码器。</li>
+<li>使用二进制文件格式如 SequenceFile 来提高 IO 效率。</li>
+</ul>
+</li>
+<li><p><strong>数据倾斜问题：</strong></p>
+<ul>
+<li><p><strong>数据倾斜现象：</strong></p>
+<ul>
+<li>数据频率倾斜——某一个区域的数据量要远远大于其他区域。</li>
+<li>数据大小倾斜——部分记录的大小远远大于平均值。</li>
+</ul>
+</li>
+<li><p><strong>如何收集倾斜数据：</strong></p>
+<ul>
+<li><p>在reduce方法中加入记录map输出键的详细情况的功能：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">MAX_VALUES</span> <span class="operator">=</span> <span class="string">&quot;skew.maxvalues&quot;</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="type">int</span> maxValueThreshold;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configure</span><span class="params">(JobConfjob)</span> &#123;</span><br><span class="line">	maxValueThreshold =job.getInt(MAX_VALUES, <span class="number">100</span>);</span><br><span class="line">&#125; </span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">reduce</span><span class="params">(Text key, Iterator&lt;Text&gt; values,OutputCollector&lt;Text, Text&gt; output,Reporter reporter)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">	inti = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (values.hasNext()) &#123;</span><br><span class="line">		values.next();</span><br><span class="line">		i++;</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">if</span> (++i &gt; maxValueThreshold)&#123;</span><br><span class="line">        log.info(<span class="string">&quot;Received &quot;</span> + i + <span class="string">&quot; values for key &quot;</span> + key);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>减少数据倾斜的方法：</strong></p>
+<blockquote>
+<p><strong>方法1：抽样和范围分区</strong></p>
+<p>​	可以通过对原始数据进行抽样得到的结果集来预设分区边界值。</p>
+<p><strong>方法2：自定义分区</strong></p>
+<p>​	另一个抽样和范围分区的替代方案是基于输出键的背景知识进行自定义分区。例如，如果map输出键的单词来源于一本书。其中大部分必然是省略词（stopword）。那么就可以将自定义分区将这部分省略词发送给固定的-部分reduce实例。而将其他的都发送给剩余的reduce实例。</p>
+<p><strong>方法3：Combine</strong></p>
+<p>​	使用Combine可以大量地减小数据频率倾斜和数据大小倾斜。在可能的情况下，Combine的目的就是聚合并精简数据。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>常用的调优参数：</strong></p>
+<ul>
+<li><p><strong>资源相关参数</strong></p>
+<ol>
+<li><p>以下参数是在用户自己的mr应用程序中配置就可以生效（mapred-default.xml） </p>
+<table>
+<thead>
+<tr>
+<th align="left">配置参数</th>
+<th align="left">参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">mapreduce.map.memory.mb</td>
+<td align="left">一个Map Task可使用的资源上限（单位:MB），默认为1024。 如果Map Task实际使用的资源量超过该值 ，则会被强制杀死。</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.memory.mb</td>
+<td align="left">一个Reduce Task可使用的资源上限（单位:MB），默认为1024。如果Reduce Task实际使用的资源量超过该值，则会被强制杀死。</td>
+</tr>
+<tr>
+<td align="left">mapreduce.map.cpu.vcores</td>
+<td align="left">每个Map task可使用的最多cpu core数目 ，默认值: 1</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.cpu.vcores</td>
+<td align="left">每个Reduce task可使用的最多cpu core数目 ，默认值: 1</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.shuffle.parallelcopies</td>
+<td align="left">每个reduce去map中拿数据的并行数。默认值是5</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.shuffle.merge.percent</td>
+<td align="left">buffer中的数据达到多少比例开始写入磁盘。默认值0.66</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.shuffle.input.buffer.percent</td>
+<td align="left">buffer大小占reduce可用内存的比例。默认值0.7</td>
+</tr>
+<tr>
+<td align="left">mapreduce.reduce.input.buffer.percent</td>
+<td align="left">指定多少比例的内存用来存放buffer中的数据，默认值是0.0</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>应该在yarn启动之前就配置在服务器的配置文件中才能生效（yarn-default.xml）  </p>
+<table>
+<thead>
+<tr>
+<th>配置参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>yarn.scheduler.minimum-allocation-mb 1024</td>
+<td>给应用程序container分配的最小内存</td>
+</tr>
+<tr>
+<td>yarn.scheduler.maximum-allocation-mb 8192</td>
+<td>给应用程序container分配的最大内存</td>
+</tr>
+<tr>
+<td>yarn.scheduler.minimum-allocation-vcores 1</td>
+<td>每个container申请的最小CPU核数</td>
+</tr>
+<tr>
+<td>yarn.scheduler.maximum-allocation-vcores 32</td>
+<td>每个container申请的最大CPU核数</td>
+</tr>
+<tr>
+<td>yarn.nodemanager.resource.memory-mb 8192</td>
+<td>给containers分配的最大物理内存</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>shuffle性能优化的关键参数 ，应在yarn启动之前就配置好（mapred-default.xml）</p>
+<table>
+<thead>
+<tr>
+<th>配置参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mapreduce.task.io.sort.mb 100</td>
+<td>shuffle的环形缓冲区大小 ，默认100m</td>
+</tr>
+<tr>
+<td>mapreduce.map.sort.spill.percent 0.8</td>
+<td>环形缓冲区溢出的阈值 ，默认80%</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+</li>
+<li><p><strong>容错相关参数(mapreduce性能优化)</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>配置参数</th>
+<th align="left">参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mapreduce.map.maxattempts</td>
+<td align="left">每个Map Task最大重试次数，一旦重试参数超过该值，则认为Map Task运行失败 ，默认值：4。</td>
+</tr>
+<tr>
+<td>mapreduce.reduce.maxattempts</td>
+<td align="left">每个Reduce Task最大重试次数 ，一旦重试参数超过该值 ，则认为Map Task运行失败 ，默认值：4。</td>
+</tr>
+<tr>
+<td>mapreduce.task.timeout</td>
+<td align="left">Task超时时间 ，经常需要设置的一个参数 ，该参数表达的意思为：如果一个task在一定时间内没有任何进入 ，即不会读取新的数据， 也没有输出数据，则认为该task处于block状态，可能是卡住了，也 许永远会卡主 ，为了防止因为用户程序永远block住不退出 ，则强 制设置了一个该超时时间（单位毫秒），默认是600000。如果你 的程序对每条输入数据的处理时间过长（比如会访问数据库，通过 网络拉取数据等），建议将该参数调大，该参数过小常出现的错误提示是<code>“AttemptID:attempt_14267829456721_123456_m_000224_0 Timed out after 300 secsContainer killed by the ApplicationMaster.”。</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-HDFS小文件弊端及优化方法"><a href="#3-HDFS小文件弊端及优化方法" class="headerlink" title="3.HDFS小文件弊端及优化方法"></a>3.HDFS小文件弊端及优化方法</h2><ol>
+<li><p><strong>HDFS小文件弊端：</strong></p>
+<blockquote>
+<p>​	HDFS上每个文件都要在namenode上建立一个索引l，这个索引l的大小约为150byte，这样当小文件比较多的时候，就会产生很多的索引文件，一方面会大量占用namenode的内存空间，另一方面就是索引文件过大时的索引速度变慢。</p>
+</blockquote>
+</li>
+<li><p>解决方案：</p>
+<ul>
+<li><p><strong>Hadoop Archive</strong></p>
+<blockquote>
+<p>​	一个高效地将小文件放入HDFS块中的文件存档工具。使用 hadoop archive 命令<strong>将多个小文件打包成一个 HAR 文件</strong>，<strong>减少 NameNode 的内存使用</strong>并<strong>允许对文件进行透明访问</strong>，<strong>提高访问效率</strong>。</p>
+</blockquote>
+</li>
+<li><p><strong>Sequence file</strong></p>
+<blockquote>
+<p>​	sequence file由一系列的二进制key&#x2F;value组成，如果key为文件名，value为文件内容，则可以**将大批小文件合并成一个大文件(SequenceFile)**。</p>
+</blockquote>
+</li>
+<li><p><strong>CombineFilelnput Format</strong></p>
+<blockquote>
+<p>​	CombineFilelnputFormat是一种新的inputformat，使用它<strong>将多个文件合并成一个单独的split</strong>，同时它<strong>会考虑数据的存储位置，提高数据处理效率</strong>。</p>
+</blockquote>
+</li>
+<li><p><strong>开启JVM重用</strong></p>
+<blockquote>
+<p>​	对于<strong>大量小文件Job</strong>，可以开启JVM重用,会<strong>减少45%运行时间</strong>。</p>
+<p>​	JVM重用理解：一个map运行一个jvm，重用的话，在一个map在jvm上运行完毕后，jvm继续运行其他jvm。</p>
+<p>​	具体设置：mapreduce.job.jvm.numtasks值在<strong>10-20</strong>之间。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-MapReduce怎么解决数据均衡问题，如何确定分区号？"><a href="#4-MapReduce怎么解决数据均衡问题，如何确定分区号？" class="headerlink" title="4.MapReduce怎么解决数据均衡问题，如何确定分区号？"></a>4.MapReduce怎么解决数据均衡问题，如何确定分区号？</h2><blockquote>
+<p>​	数据均衡问题指的就是某个节点或者某几个节点的任务运行的比较慢，拖慢了整个Job的进度。实际上数据均衡问题就是数据倾斜问题 ，解决方案同解决数据倾斜的方案。（见上一题）</p>
+<p>​	MapReduce中分区默认是按hashcode来分的 ，即根据<code>key</code>的<code>hashCode</code>对<code>Reduce Tasks</code>个数取模得到。</p>
+<p>​	用户可以自定义分区类 ，需要继承系统的Partitioner类 ，重写getPartition()方法即可。</p>
+</blockquote>
+<h2 id="5-Hadoop中job和Tasks之间的区别是什么"><a href="#5-Hadoop中job和Tasks之间的区别是什么" class="headerlink" title="5. Hadoop中job和Tasks之间的区别是什么"></a>5. Hadoop中job和Tasks之间的区别是什么</h2><blockquote>
+<p>​	编写好的一个程序 ，我们称为Mapreduce程序 ，一个Mapreduce程序就是一个Job ，而一个Job里面可以有一个或多个Task ，Task又可以区分为Map Task和Reduce Task.</p>
+</blockquote>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-29T21:22:41+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年6月29日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/面试题/Hadoop面试题之Yarn/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="码猿不正经">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="码猿不正经">
-    <meta itemprop="description" content="walims的个人博客">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/"  itemprop="url">
-        Hadoop面试题之Yarn
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
+  <span hidden itemprop="keywords">Hadoop 面试题</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        1.简述Hadoop1与Hadoop2的架构异同
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/&title=Hadoop面试题之Hadoop优化 - 码猿不正经&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>算法入门-时间复杂度与空间复杂度</p>
+          <p class='content'></p>
+        </a>
+      
+      
+        <a class='next' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/'>
+          <p class='title'>Hadoop面试题之Yarn<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1.简述Hadoop1与Hadoop2的架构异同
 加入了yarn解决了资源调度的问题
 加入了对zookeeper的支持实现比较可靠的高可用
 
-2.为什么会产生yarn,它解决了什么问题，有什么优势？
-解决的问题：Yarn最主要的功能就是解决运行的用户程序与yarn框架完全解耦
-优势：Yarn上可以运行各种类型的分布式运算程序（mapreduce只是其中的一种），比如mapreduce、sto...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:55+08:00">2024-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+2.为什么会产生yarn,它解决了什么问题，有什么优...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/面试题/Hadoop面试题之MapReduce/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="码猿不正经">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="码猿不正经">
-    <meta itemprop="description" content="walims的个人博客">
-  </span>
   
-  
-  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/"  itemprop="url">
-        Hadoop面试题之MapReduce
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？
-https://blog.csdn.net/klionl/article/details/105395340
 
-序列化概述
+    <div id="layoutHelper-comments"></div>
+
+  </article>
 
 
-什么是序列化和反序列化：
-
-序列化就是把内存中的对象，转换成字节序列(或其他数据传输协议)以便于存储到磁盘(持久化)和网络传输。
-
-反序列化就是将收到字节序列(或其他数据传输协议)或者是磁盘的持...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:51+08:00">2024-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/21/面试题/Hadoop面试题之HDFS/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="码猿不正经">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="码猿不正经">
-    <meta itemprop="description" content="walims的个人博客">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/21/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/"  itemprop="url">
-        Hadoop面试题之HDFS
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1.HDFS的存储机制（读写流程）总体：
-
-按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上
-三副本机制：为了保证HDFS的数据的安全性，避免数据丢失，HDFS对每个块数据进行备份，默认情况下块数据会存储3份，叫做三副本，副本块存储在不同服务器上
-默认存储策略由BlockPlacementPolicyDefault类支持。也就...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-21T16:21:59+08:00">2024-06-21</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/21/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
-	
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2716,168 +2804,56 @@ https://blog.csdn.net/klionl/article/details/105395340
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/vue-color-avatar2.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">码猿不正经</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            active-action="action-categoriesHadoopE99DA2E8AF95E9A298"
-            ><div class='name'>Hadoop面试题</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Hadoop/" style="font-size: 24px; color: #555">Hadoop</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 24px; color: #555">面试题</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-06-29 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"><div class="item"><time>2024-06-29</time><span>算法</span></div><span>算法入门-时间复杂度与空间复杂度</span></a></li><li><a class="widget-last" href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"><div class="item"><time>2024-06-29</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Hadoop优化</span></a></li><li><a class="widget-last" href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之Yarn</span></a></li><li><a class="widget-last" href="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之MapReduce</span></a></li><li><a class="widget-last" href="/2024/06/21/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/"><div class="item"><time>2024-06-27</time><span>Hadoop面试题</span></div><span>Hadoop面试题之HDFS</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-MapReduce%E8%B7%91%E5%BE%97%E6%85%A2%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-text">1.MapReduce跑得慢的原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-MapReduce%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95"><span class="toc-text">2.MapReduce优化方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-HDFS%E5%B0%8F%E6%96%87%E4%BB%B6%E5%BC%8A%E7%AB%AF%E5%8F%8A%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95"><span class="toc-text">3.HDFS小文件弊端及优化方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MapReduce%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E6%95%B0%E6%8D%AE%E5%9D%87%E8%A1%A1%E9%97%AE%E9%A2%98%EF%BC%8C%E5%A6%82%E4%BD%95%E7%A1%AE%E5%AE%9A%E5%88%86%E5%8C%BA%E5%8F%B7%EF%BC%9F"><span class="toc-text">4.MapReduce怎么解决数据均衡问题，如何确定分区号？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Hadoop%E4%B8%ADjob%E5%92%8CTasks%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">5. Hadoop中job和Tasks之间的区别是什么</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2901,13 +2877,14 @@ https://blog.csdn.net/klionl/article/details/105395340
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3426,7 +3403,7 @@ https://blog.csdn.net/klionl/article/details/105395340
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://walims.xyz/archives/2024/6/","name":"6月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Hadoop面试题/","name":"Hadoop面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/27/面试题/Hadoop面试题之Hadoop优化/","name":"Hadoop面试题之Hadoop优化"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hadoop面试题之Hadoop优化","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/","wordCount":0,"datePublished":"2024-06-27T11:40:59.000Z","dateModified":"2024-06-29T13:22:41.491Z","articleSection":"Hadoop面试题","keywords":"Hadoop,面试题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

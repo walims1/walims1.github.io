@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://walims.xyz/2024/06/27/hadoop面试题之yarn/"/>
+  <link rel="canonical" href="https://walims.xyz/2024/06/29/算法/算法入门-时间复杂度与空间复杂度/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,22 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hadoop面试题之Yarn - 码猿不正经</title>
-  <meta name="keywords" content="Hadoop,面试题,null">
+  <title>算法入门-时间复杂度与空间复杂度 - 码猿不正经</title>
+  <meta name="keywords" content="算法,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hadoop面试题之Yarn">
-<meta property="og:url" content="https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/index.html">
+<meta property="og:title" content="算法入门-时间复杂度与空间复杂度">
+<meta property="og:url" content="https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html">
 <meta property="og:site_name" content="码猿不正经">
-<meta property="og:description" content="1.简述Hadoop1与Hadoop2的架构异同 加入了yarn解决了资源调度的问题 加入了对zookeeper的支持实现比较可靠的高可用  2.为什么会产生yarn,它解决了什么问题，有什么优势？ 解决的问题：Yarn最主要的功能就是解决运行的用户程序与yarn框架完全解耦 优势：Yarn上可以运行各种类型的分布式运算程序（mapreduce只是其中的一种），比如mapreduce、storm程">
+<meta property="og:description" content="walims的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-06-27T11:40:55.000Z">
-<meta property="article:modified_time" content="2024-06-27T13:37:52.309Z">
+<meta property="article:published_time" content="2024-06-29T13:50:04.904Z">
+<meta property="article:modified_time" content="2024-06-29T13:54:05.495Z">
 <meta property="article:author" content="walims">
-<meta property="article:tag" content="Hadoop">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1631,7 +1630,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719666512052),
+    lastupdate: new Date(1719669322191),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2348,7 +2347,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/Hadoop面试题之Yarn/">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/29/算法/算法入门-时间复杂度与空间复杂度/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="码猿不正经">
   </span>
@@ -2369,7 +2368,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hadoop面试题之Yarn
+        算法入门-时间复杂度与空间复杂度
       </h1>
       <div class='new-meta-box'>
         
@@ -2379,10 +2378,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
+    <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
+        <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
       </span>
     
   </div>
@@ -2391,10 +2390,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:55+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-29T21:50:04+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2024年6月27日</p>
+    <p>发布于：2024年6月29日</p>
   </a>
 </div>
 
@@ -2417,89 +2416,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="1-简述Hadoop1与Hadoop2的架构异同"><a href="#1-简述Hadoop1与Hadoop2的架构异同" class="headerlink" title="1.简述Hadoop1与Hadoop2的架构异同"></a>1.简述Hadoop1与Hadoop2的架构异同</h2><ul>
-<li>加入了yarn解决了资源调度的问题</li>
-<li>加入了对zookeeper的支持实现比较可靠的高可用</li>
-</ul>
-<h2 id="2-为什么会产生yarn-它解决了什么问题，有什么优势？"><a href="#2-为什么会产生yarn-它解决了什么问题，有什么优势？" class="headerlink" title="2.为什么会产生yarn,它解决了什么问题，有什么优势？"></a>2.为什么会产生yarn,它解决了什么问题，有什么优势？</h2><ul>
-<li>解决的问题：Yarn最主要的功能就是解决运行的用户程序与yarn框架完全解耦</li>
-<li>优势：Yarn上可以运行各种类型的分布式运算程序（mapreduce只是其中的一种），比如mapreduce、storm程序，spark程序….</li>
-</ul>
-<h2 id="3-HDFS的数据压缩算法有哪些？每种算法的优缺点和应用场景是什么？"><a href="#3-HDFS的数据压缩算法有哪些？每种算法的优缺点和应用场景是什么？" class="headerlink" title="3.HDFS的数据压缩算法有哪些？每种算法的优缺点和应用场景是什么？"></a>3.HDFS的数据压缩算法有哪些？每种算法的优缺点和应用场景是什么？</h2><ul>
-<li><p>gzip压缩</p>
-<ul>
-<li><p>优点：压缩率比较高，而且压缩&#x2F;解压速度也比较快；hadoop本身支持，在应用中处理gzip格式的文件就和直接处理文本一样；大部分linux系统都自带gzip命令 ，使用方便。</p>
-</li>
-<li><p>缺点：不支持split。</p>
-</li>
-<li><p>应用场景：<strong>当每个文件压缩之后在130M以内的（1个块大小内），都可以考虑用gzip压缩格式。</strong>例如说一天或者一个小时的日志压缩成一个gzip文件 ，运行mapreduce程序的时候通过多个gzip文件达到并发。hive程序， streaming程序 ，和java写的mapreduce程序完全和文本处理一样 ，压缩之后原来的程序不需要做任何修改。</p>
-</li>
-</ul>
-</li>
-<li><p>Bzip2压缩</p>
-<ul>
-<li><p>优点：支持split；具有很高的压缩率，比gzip压缩率都高；hadoop本身支持，但不支持native；在linux系统下自带bzip2命令 ，使用方便。</p>
-</li>
-<li><p>缺点：压缩&#x2F;解压速度慢；不支持native。</p>
-</li>
-<li><p>应用场景：<strong>适合对速度要求不高 ，但需要较高的压缩率的时候</strong> ，可以作为mapreduce作业的输出格式；或者输出之后的数据比较大，处理之后的数据需要压缩存档减少磁盘空间并且以后数据用得比较少的情况；或者对单个很大的文本文件想压缩减少存储空间 ，同时又需要支持split ，而且兼容之前的应用程序（即应用程序不需要修改）的情况。</p>
-</li>
-</ul>
-</li>
-<li><p>Lzo压缩</p>
-<ul>
-<li><p>优点：压缩&#x2F;解压速度也比较快，合理的压缩率；支持split，是hadoop中最流行的压缩格式；可以在linux系统下安装lzop命令 ，使用方便。</p>
-</li>
-<li><p>缺点：压缩率比gzip要低一些；hadoop本身不支持，需要安装；在应用中对lzo格式的文件需要做一些特殊处理（为了支持split需要建索引 ，还需要指定inputformat为lzo格式）。</p>
-</li>
-<li><p>应用场景：一个很大的文本文件，压缩之后还大于200M以上的可以考虑，而且单个文件越大，lzo优点越明显。</p>
-</li>
-</ul>
-</li>
-<li><p>Snappy压缩</p>
-<ul>
-<li><p>优点：高速压缩速度和合理的压缩率。</p>
-</li>
-<li><p>缺点：不支持split；压缩率比gzip要低；hadoop本身不支持 ，需要安装；</p>
-</li>
-<li><p>应用场景：当Mapreduce作业的Map输出的数据比较大的时候 ，作为Map到Reduce的中间数据的压缩格式；或者作为一个Mapreduce作业的输出和另外一个Mapreduce作业的输入</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-Hadoop的调度器总结"><a href="#4-Hadoop的调度器总结" class="headerlink" title="4.Hadoop的调度器总结"></a>4.Hadoop的调度器总结</h2><ul>
-<li><p>目前，Hadoop的作业调度器主要有三种：<strong>FIFO Scheduler、Capacity Scheduler和Fair Scheduler</strong></p>
-</li>
-<li><p>Hadoop默认的资源调度器是<strong>FIFO Scheduler</strong>，Hadoop2.7.2默认的资源调度器是<strong>Capacity Scheduler</strong></p>
-</li>
-</ul>
-<p>具体设置详见：yarn-default.xml文件:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">description</span>&gt;</span>The class to use as the resource scheduler.<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.resourcemanager.scheduler.class<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">value</span>&gt;</span></span><br><span class="line">org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</span><br><span class="line"><span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p><strong>先进先出调度器（FIFO Scheduler）</strong></p>
-<blockquote>
-<p>​	Hadoop中默认的调度器，是Hadoop最早实现的调度器之一，也是最简单的一种。它按照任务到达的顺序来进行调度，即先提交的任务先被执行。虽然实现简单，但它并不适合用于生产环境，因为不考虑作业的优先级、资源需求和执行时间等因素，可能导致资源利用不高，长作业等待时间过长。</p>
-</blockquote>
-<p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%85%88%E8%BF%9B%E5%85%88%E5%87%BA%E8%B0%83%E5%BA%A6%E5%99%A8.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%85%88%E8%BF%9B%E5%85%88%E5%87%BA%E8%B0%83%E5%BA%A6%E5%99%A8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-</li>
-<li><p><strong>容量调度器（Capacity Scheduler）</strong></p>
-<blockquote>
-<p><strong>Hadoop2.x之后默认的调度器</strong></p>
-<p>采用多队列的方式。以队列为单位划分资源，每个队列可设定一定比例的资源最低保证和使用上限。每个队列内部采用FIFO的调度策略。</p>
-<p>调度过程：当job提交后大致由如下过程<br>1）为job选择队列，通过计算队列资源使用率，选择”最闲的”队列<br>2）将队列中的job按照提交时间排序，选择最早的Application分配资源</p>
-<p>一个队列中同时只能有一个job执行，队列并行度等于队列的个数，允许并行运行</p>
-</blockquote>
-<p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%AE%B9%E9%87%8F%E8%B0%83%E5%BA%A6%E5%99%A8.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%AE%B9%E9%87%8F%E8%B0%83%E5%BA%A6%E5%99%A8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-</li>
-<li><p><strong>公平调度器（ Fair Scheduler）</strong>  </p>
-<blockquote>
-<p>​	公平调度器也是Hadoop YARN引入的调度器，它的主要目标是保证所有作业公平地共享集群资源。它根据作业的需求和历史执行情况来动态地分配资源。不同于容量调度器的静态资源划分，公平调度器会在运行时根据资源需求进行动态调整。每个作业被分配的资源量与其他作业的需求和当前集群的负载情况成比例。这使得长作业无需等待过长时间，同时短作业也能得到及时的响应。</p>
-</blockquote>
-<p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%85%AC%E5%B9%B3%E8%B0%83%E5%BA%A6%E5%99%A8.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/%E5%85%AC%E5%B9%B3%E8%B0%83%E5%BA%A6%E5%99%A8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-</li>
-</ul>
-
+    
   </div>
   
   
@@ -2523,10 +2440,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-27T21:37:52+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-29T21:54:05+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年6月27日</p>
+    <p>更新于：2024年6月29日</p>
   </a>
 </div>
 
@@ -2535,8 +2452,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
-  <span hidden itemprop="keywords">Hadoop 面试题</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>算法</p></a></div>
+  <span hidden itemprop="keywords">算法</span>
 
 
         
@@ -2549,7 +2466,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/&title=Hadoop面试题之Yarn - 码猿不正经&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/&title=算法入门-时间复杂度与空间复杂度 - 码猿不正经&summary="
           
           >
           
@@ -2561,7 +2478,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/&title=Hadoop面试题之Yarn - 码猿不正经&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/&title=算法入门-时间复杂度与空间复杂度 - 码猿不正经&summary="
           
           >
           
@@ -2573,7 +2490,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/&title=Hadoop面试题之Yarn - 码猿不正经&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/&title=算法入门-时间复杂度与空间复杂度 - 码猿不正经&summary="
           
           >
           
@@ -2606,21 +2523,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hadoop面试题之Hadoop优化</p>
+      
+        <a class='next' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/'>
+          <p class='title'>Hadoop面试题之Hadoop优化<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>1.MapReduce跑得慢的原因Mapreduce程序效率的瓶颈在于两点：
 
 计算机性能：CPU、内存、磁盘健康状况以及网络速度都可能影响MapReduce任务的执行效率。
 I&#x2F;O ...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/'>
-          <p class='title'>Hadoop面试题之MapReduce<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？
-https://blog.csdn.net/klionl/article/details/105395340
-
-序列化概述...</p>
         </a>
       
     </div>
@@ -2636,7 +2545,7 @@ https://blog.csdn.net/klionl/article/details/105395340
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2668,19 +2577,9 @@ https://blog.csdn.net/klionl/article/details/105395340
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
-    
-  <header>
-    
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%AE%80%E8%BF%B0Hadoop1%E4%B8%8EHadoop2%E7%9A%84%E6%9E%B6%E6%9E%84%E5%BC%82%E5%90%8C"><span class="toc-text">1.简述Hadoop1与Hadoop2的架构异同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E4%BA%A7%E7%94%9Fyarn-%E5%AE%83%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF%EF%BC%9F"><span class="toc-text">2.为什么会产生yarn,它解决了什么问题，有什么优势？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-HDFS%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E6%AF%8F%E7%A7%8D%E7%AE%97%E6%B3%95%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E5%92%8C%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">3.HDFS的数据压缩算法有哪些？每种算法的优缺点和应用场景是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Hadoop%E7%9A%84%E8%B0%83%E5%BA%A6%E5%99%A8%E6%80%BB%E7%BB%93"><span class="toc-text">4.Hadoop的调度器总结</span></a></li></ol>
-    </div>
-  </section>
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
 
   
 
@@ -3257,7 +3156,7 @@ https://blog.csdn.net/klionl/article/details/105395340
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Hadoop面试题/","name":"Hadoop面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/27/Hadoop面试题之Yarn/","name":"Hadoop面试题之Yarn"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hadoop面试题之Yarn","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/27/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/","wordCount":0,"datePublished":"2024-06-27T11:40:55.000Z","dateModified":"2024-06-27T13:37:52.309Z","articleSection":"Hadoop面试题","keywords":"Hadoop,面试题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/算法/","name":"算法"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/29/算法/算法入门-时间复杂度与空间复杂度/","name":"算法入门-时间复杂度与空间复杂度"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"算法入门-时间复杂度与空间复杂度","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/29/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/","wordCount":0,"datePublished":"2024-06-29T13:50:04.904Z","dateModified":"2024-06-29T13:54:05.495Z","articleSection":"算法","keywords":"算法","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
