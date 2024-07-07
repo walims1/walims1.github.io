@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-07-06T13:52:33.970Z">
-<meta property="article:modified_time" content="2024-07-06T14:02:07.329Z">
+<meta property="article:modified_time" content="2024-07-07T00:37:14.826Z">
 <meta property="article:author" content="walims">
 <meta property="article:tag" content="面试题">
 <meta property="article:tag" content="Spark">
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1720274635392),
+    lastupdate: new Date(1720312689329),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2577,7 +2577,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <p>​	如果Task的数量多，能用的资源也多，那么并行度自然就好。如果Task的数据少，资源很多有一定的浪费，但是也还好。如果Task数目很多，但是资源少，那么会执行完一批，再执行下一批。所以官方给出的建议是，这个Task数目要是core总数的2-3倍为佳。如果core有多少Task就有多少那么有些比较快的task执行完了，一些资源就会处于等待的状态。</p>
 <p>​	<strong>如何设置Task数量：</strong></p>
-<p>​	将Task数量设置成与Application总CPUCore数量相同（理想情况，150个core，分配150Task），官方推荐Task数量设置成Application总CPUCore数量的2<del>3倍（150个cpucore，设置task数量为300</del>500）。</p>
+<p>​	将Task数量设置成与Application总CPUCore数量相同（理想情况，150个core，分配150Task），官方推荐Task数量设置成Application总CPUCore数量的2-3倍（150个cpucore，设置task数量为300-500）。</p>
 <p>​	与理想情况不同的是：有些Task会运行快一点，比如50s就完了，有些Task可能会慢一点，要一分半才运行完，所以如果你的Task数量刚好设置的跟CPUCore数量相同，也可能会导致资源的浪费，比如150Task，10个先运行完了，剩余140个还在运行，但是这个时候就有10个core会处于等待状态。</p>
 
   </div>
@@ -2603,10 +2603,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-06T22:02:07+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-07T08:37:14+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年7月6日</p>
+    <p>更新于：2024年7月7日</p>
   </a>
 </div>
 
@@ -3442,7 +3442,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/","name":"Spark面试题一--Spark base"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spark面试题一--Spark base","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/","wordCount":0,"datePublished":"2024-07-06T13:52:33.970Z","dateModified":"2024-07-06T14:02:07.329Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/","name":"Spark面试题一--Spark base"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spark面试题一--Spark base","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/","wordCount":0,"datePublished":"2024-07-06T13:52:33.970Z","dateModified":"2024-07-07T00:37:14.826Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
