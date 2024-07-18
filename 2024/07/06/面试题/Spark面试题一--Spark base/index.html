@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-07-06T13:52:33.970Z">
-<meta property="article:modified_time" content="2024-07-16T06:34:45.716Z">
+<meta property="article:modified_time" content="2024-07-18T00:35:18.010Z">
 <meta property="article:author" content="walims">
 <meta property="article:tag" content="面试题">
 <meta property="article:tag" content="Spark">
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1721198012716),
+    lastupdate: new Date(1721262978535),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2657,21 +2657,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="8-为什么要用Yarn来部署Spark"><a href="#8-为什么要用Yarn来部署Spark" class="headerlink" title="8. 为什么要用Yarn来部署Spark?"></a>8. 为什么要用Yarn来部署Spark?</h2><p>​	因为 Yarn 支持动态资源配置。Standalone 模式只支持简单的固定资源分配策略，每个任务固定数量的 core，各 Job 按顺序依次分配资源，资源不够的时候就排队。这种模式比较适合单用户的情况，多用户的情境下，会有可能有些用户的任务得不到资源。</p>
 <p>​	Yarn 作为通用的种子资源调度平台 ，除了 Spark 提供调度服务之外 ，还可以为其他系统提供调度 ，如 Hadoop MapReduce, Hive 等。</p>
 <h2 id="9-Spark作业提交流程是怎么样的"><a href="#9-Spark作业提交流程是怎么样的" class="headerlink" title="9.Spark作业提交流程是怎么样的"></a>9.Spark作业提交流程是怎么样的</h2><ol>
-<li><p>spark-submit 提交代码 ，执行 new SparkContext() ，在 SparkContext 里构 造 DAGScheduler 和 TaskScheduler。</p>
+<li><p>spark-submit 提交代码，执行 new SparkContext()，在 SparkContext 里构造 DAGScheduler 和 TaskScheduler。</p>
 </li>
 <li><p>TaskScheduler 会通过后台的一个进程 ，连接 Master ，向 Master 注册 Application。</p>
 </li>
-<li><p>Master 接收到 Application 请求后 ，会使用相应的资源调度算法 ，在 Worker 上为这个 Application 启动 多个 Executer。</p>
+<li><p>Master 接收到 Application 请求后，会使用相应的资源调度算法，在 Worker 上为这个 Application 启动 多个 Executer。</p>
 </li>
-<li><p>Executor 启动后 ，会自己反向注册到 TaskScheduler 中。 所有 Executor 都注册到 Driver 上之后， SparkContext 结束初始化 ，接下来往下执行我们自己的代码。</p>
+<li><p>Executor 启动后，会自己反向注册到 TaskScheduler 中。 所有 Executor 都注册到 Driver 上之后， SparkContext 结束初始化 ，接下来往下执行我们自己的代码。</p>
 </li>
-<li><p>每执行到一个 Action ，就会创建一个 Job。Job 会提交给 DAGScheduler。</p>
+<li><p>每执行到一个 Action，就会创建一个 Job。Job 会提交给 DAGScheduler。</p>
 </li>
-<li><p>DAGScheduler 会将 Job划分为多个 stage ，然后每个 stage 创建一个 TaskSet。 </p>
+<li><p>DAGScheduler 会将 Job划分为多个 stage，然后每个 stage 创建一个 TaskSet。 </p>
 </li>
-<li><p>TaskScheduler 会把每一个 TaskSet 里的 Task ，提交到 Executor 上执行。</p>
+<li><p>TaskScheduler 会把每一个 TaskSet 里的 Task，提交到 Executor 上执行。</p>
 </li>
-<li><p>Executor 上有线程池 ，每接收到一个 Task ，就用 Task Runner 封装 ，然后从线程池里取出一个线程执行这 个 task。(Task Runner 将我们编写的代码，拷贝，反序列化，执行 Task，每个 Task 执行 RDD 里的一个 partition)</p>
+<li><p>Executor 上有线程池，每接收到一个 Task，就用 Task Runner 封装，然后从线程池里取出一个线程执行这 个 task。(Task Runner 将我们编写的代码，拷贝，反序列化，执行 Task，每个 Task 执行 RDD 里的一个 partition)</p>
 </li>
 </ol>
 <h2 id="10-Spark-on-yarn-作业执行流程-，yarn-client-和-yarn-cluster-有什么区别"><a href="#10-Spark-on-yarn-作业执行流程-，yarn-client-和-yarn-cluster-有什么区别" class="headerlink" title="10.Spark on yarn 作业执行流程 ，yarn-client 和 yarn cluster 有什么区别"></a>10.Spark on yarn 作业执行流程 ，yarn-client 和 yarn cluster 有什么区别</h2><p><strong>Spark On Yarn 的优势：</strong> </p>
@@ -2715,10 +2715,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-16T14:34:45+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-18T08:35:18+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年7月16日</p>
+    <p>更新于：2024年7月18日</p>
   </a>
 </div>
 
@@ -3540,7 +3540,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/","name":"Spark面试题一--Spark base"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spark面试题一--Spark base","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/","wordCount":0,"datePublished":"2024-07-06T13:52:33.970Z","dateModified":"2024-07-16T06:34:45.716Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/","name":"Spark面试题一--Spark base"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spark面试题一--Spark base","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/","wordCount":0,"datePublished":"2024-07-06T13:52:33.970Z","dateModified":"2024-07-18T00:35:18.010Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
