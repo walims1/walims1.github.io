@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://walims.xyz/2024/07/06/面试题/spark面试题一--spark base/"/>
+  <link rel="canonical" href="https://walims.xyz/2024/07/03/面试题/几个spark相关面试题/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Spark面试题一--Spark base - 码猿不正经</title>
+  <title>几个Spark相关面试题 - 码猿不正经</title>
   <meta name="keywords" content="面试题,Spark,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spark面试题一--Spark base">
-<meta property="og:url" content="https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/index.html">
+<meta property="og:title" content="几个Spark相关面试题">
+<meta property="og:url" content="https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="码猿不正经">
 <meta property="og:description" content="1.阐述下对Spark的并行度理解​	Spark作业中 ，各个stage的task的数量 ，代表Spark作业在各个阶段stage的并行度。 分为资源并行度(物理并行度)和数据并行度(逻辑并行度)  资源并行度：由节点数（executor）和cpu数（core）决定的 数据并行度：task的数量，partition大小 task又分为map时的task和reduce（shuffle）时的task;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-07-06T13:52:33.970Z">
-<meta property="article:modified_time" content="2024-07-18T00:35:18.010Z">
+<meta property="article:published_time" content="2024-07-03T11:40:59.000Z">
+<meta property="article:modified_time" content="2024-08-12T09:33:43.793Z">
 <meta property="article:author" content="walims">
 <meta property="article:tag" content="面试题">
 <meta property="article:tag" content="Spark">
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1723454991192),
+    lastupdate: new Date(1723455548223),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2497,7 +2497,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/07/03/面试题/几个Spark相关面试题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="码猿不正经">
   </span>
@@ -2518,7 +2518,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Spark面试题一--Spark base
+        几个Spark相关面试题
       </h1>
       <div class='new-meta-box'>
         
@@ -2540,10 +2540,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-07-06T21:52:33+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-07-03T19:40:59+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2024年7月6日</p>
+    <p>发布于：2024年7月3日</p>
   </a>
 </div>
 
@@ -2715,10 +2715,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-18T08:35:18+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-08-12T17:33:43+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年7月18日</p>
+    <p>更新于：2024年8月12日</p>
   </a>
 </div>
 
@@ -2741,7 +2741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/&title=Spark面试题一--Spark base - 码猿不正经&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/&title=几个Spark相关面试题 - 码猿不正经&summary="
           
           >
           
@@ -2753,7 +2753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/&title=Spark面试题一--Spark base - 码猿不正经&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/&title=几个Spark相关面试题 - 码猿不正经&summary="
           
           >
           
@@ -2765,7 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/&title=Spark面试题一--Spark base - 码猿不正经&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/&title=几个Spark相关面试题 - 码猿不正经&summary="
           
           >
           
@@ -2798,16 +2798,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/07/20/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>机器学习算法-KMeans聚类</p>
-          <p class='content'>KMeans聚类算法KMeans聚类：KMeans单词—-K(K个聚类中心)+Means(根据均值迭代聚类中心)
-KMeans聚类算法是一种经典的聚类方法，属于无监督学习。它的主要目标是将n个样...</p>
-        </a>
       
-      
-        <a class='next' href='/2024/07/02/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/'>
-          <p class='title'>排序算法-快速排序<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>快速排序​	快速排序（Quick Sort）是一种高效的排序算法，由英国计算机科学家托尼·霍尔（Tony Hoare）在1960年提出。它采用分治法（Divide and Conquer）的策略...</p>
+        <a class='next' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/'>
+          <p class='title'>Hadoop面试题之Yarn<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1.简述Hadoop1与Hadoop2的架构异同
+加入了yarn解决了资源调度的问题
+加入了对zookeeper的支持实现比较可靠的高可用
+
+2.为什么会产生yarn,它解决了什么问题，有什么优...</p>
         </a>
       
     </div>
@@ -2823,7 +2821,7 @@ KMeans聚类算法是一种经典的聚类方法，属于无监督学习。它�
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3546,7 +3544,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/06/面试题/Spark面试题一--Spark base/","name":"Spark面试题一--Spark base"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spark面试题一--Spark base","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/06/%E9%9D%A2%E8%AF%95%E9%A2%98/Spark%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80--Spark%20base/","wordCount":0,"datePublished":"2024-07-06T13:52:33.970Z","dateModified":"2024-07-18T00:35:18.010Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Spark面试题/","name":"Spark面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/07/03/面试题/几个Spark相关面试题/","name":"几个Spark相关面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"几个Spark相关面试题","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/07/03/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%87%A0%E4%B8%AASpark%E7%9B%B8%E5%85%B3%E9%9D%A2%E8%AF%95%E9%A2%98/","wordCount":0,"datePublished":"2024-07-03T11:40:59.000Z","dateModified":"2024-08-12T09:33:43.793Z","articleSection":"Spark面试题","keywords":"面试题,Spark","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

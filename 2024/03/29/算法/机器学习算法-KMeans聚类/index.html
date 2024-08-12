@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://walims.xyz/2024/06/27/面试题/hadoop面试题之mapreduce/"/>
+  <link rel="canonical" href="https://walims.xyz/2024/03/29/算法/机器学习算法-kmeans聚类/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,22 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hadoop面试题之MapReduce - 码猿不正经</title>
-  <meta name="keywords" content="Hadoop,面试题,null">
+  <title>机器学习算法-KMeans聚类 - 码猿不正经</title>
+  <meta name="keywords" content="算法,机器学习,null">
   <meta desc name="description" content="walims的个人博客 - walims - 码猿不正经">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hadoop面试题之MapReduce">
-<meta property="og:url" content="https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/index.html">
+<meta property="og:title" content="机器学习算法-KMeans聚类">
+<meta property="og:url" content="https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/index.html">
 <meta property="og:site_name" content="码猿不正经">
-<meta property="og:description" content="1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？ https:&#x2F;&#x2F;blog.csdn.net&#x2F;klionl&#x2F;article&#x2F;details&#x2F;105395340  序列化概述   什么是序列化和反序列化：  序列化就是把内存中的对象，转换成字节序列(或其他数据传输协议)以便于存储到磁盘(持久化)和网络传输。  反序列化就是将收到字节序列(或其他数据传输协议)或者是磁盘的持久化数">
+<meta property="og:description" content="KMeans聚类算法KMeans聚类：KMeans单词—-K(K个聚类中心)+Means(根据均值迭代聚类中心) KMeans聚类算法是一种经典的聚类方法，属于无监督学习。它的主要目标是将n个样本划分到k个簇中，使得每个样本属于与其最近的均值（即簇中心）对应的簇，从而使得簇内的方差最小化。  K-Means算法的思想: 对给定的样本集，用欧氏距离(向量)作为衡量数据对象间相似度的指标，相似度与数据">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-06-27T11:40:51.000Z">
-<meta property="article:modified_time" content="2024-06-27T13:37:47.237Z">
+<meta property="article:published_time" content="2024-03-29T11:40:59.000Z">
+<meta property="article:modified_time" content="2024-08-12T09:35:49.985Z">
 <meta property="article:author" content="walims">
-<meta property="article:tag" content="Hadoop">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1723454991192),
+    lastupdate: new Date(1723455548223),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2497,7 +2497,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/06/27/面试题/Hadoop面试题之MapReduce/">
+  <link itemprop="mainEntityOfPage" href="https://walims.xyz/2024/03/29/算法/机器学习算法-KMeans聚类/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="码猿不正经">
   </span>
@@ -2518,7 +2518,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hadoop面试题之MapReduce
+        机器学习算法-KMeans聚类
       </h1>
       <div class='new-meta-box'>
         
@@ -2528,10 +2528,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/">Hadoop面试题</a>
+    <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><span class="sep"></span><a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url"><span itemprop="name">Hadoop面试题</span></a>
+        <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">机器学习</span></a>
       </span>
     
   </div>
@@ -2540,10 +2544,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-27T19:40:51+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-03-29T19:40:59+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2024年6月27日</p>
+    <p>发布于：2024年3月29日</p>
   </a>
 </div>
 
@@ -2566,199 +2570,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="1-谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？"><a href="#1-谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？" class="headerlink" title="1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？"></a>1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/klionl/article/details/105395340">https://blog.csdn.net/klionl/article/details/105395340</a></p>
-</blockquote>
-<p><strong>序列化概述</strong></p>
-<blockquote>
-<ul>
-<li><p><strong>什么是序列化和反序列化：</strong></p>
-<ul>
-<li><p>序列化就是把<strong>内存中的对象，转换成字节序列(或其他数据传输协议)<strong>以</strong>便于存储到磁盘(持久化)和网络传输</strong>。</p>
-</li>
-<li><p>反序列化就是将<strong>收到字节序列(或其他数据传输协议)或者是磁盘的持久化数据，转换成内存中的对象</strong>。</p>
-</li>
-</ul>
-</li>
-<li><p>为什么要序列化</p>
-<ul>
-<li>一般来说，“活的” 对象只生存在内存里，关机断电就没有了。而且“活的”对象只能由本地的进程使用，不能被发送到网络上的另外一台计算机。然而<strong>序列化可以存储“活的”对象，可以将“活的”对象发送到远程计算机</strong>。</li>
-</ul>
-</li>
-<li><p><strong>为什么不用java的序列化：</strong></p>
-<ul>
-<li>Java的序列化是一个重量级序列化框架（Serializable），一个对象被序列化后 ，会<strong>附带很多额外的信息</strong> （各种校验信息 ，header，继承体系等），<strong>不便于在网络中高效传输</strong>。所以 ，hadoop自己开发了一套序列化机制（Writable），精简、高效。</li>
-</ul>
-</li>
-<li><p>Hadoop序列化特点:</p>
-<ol>
-<li><p><strong>紧凑</strong>: 高效使用存储空间。</p>
-</li>
-<li><p><strong>快速</strong>: 读写数据的额外开销小。</p>
-</li>
-<li><p><strong>可扩展</strong>: 随着通信协议的升级而可升级</p>
-</li>
-<li><p><strong>互操作</strong>: 支持多语言的交互</p>
-</li>
+    <h2 id="KMeans聚类算法"><a href="#KMeans聚类算法" class="headerlink" title="KMeans聚类算法"></a>KMeans聚类算法</h2><p>KMeans聚类：KMeans单词—-K(K个聚类中心)+Means(根据均值迭代聚类中心)</p>
+<p>KMeans聚类算法是一种经典的聚类方法，属于无监督学习。它的主要目标是将n个样本划分到k个簇中，使得每个样本属于与其最近的均值（即簇中心）对应的簇，从而使得簇内的方差最小化。 </p>
+<p>K-Means算法的思想: 对给定的样本集，用欧氏距离(向量)作为衡量数据对象间相似度的指标，相似度与数据对象间的距离成反比，相似度越大，距离越小。</p>
+<p>欧式距离计算公式：</p>
+<p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/image-20230702185931002.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/image-20230702185931002.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230702185931002"></p>
+<h2 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h2><ol>
+<li>首先随机选择K个质心，有多少个质心最后就会有多少个簇</li>
+<li>计算每个样本点到达K个质心的距离，如果距离比较近直接划分到这个簇</li>
+<li>在分出的簇内部重新计算质心，通常是簇内所有点的均值，然后迭代进行分簇</li>
+<li>检查算法是否满足停止条件，比如质心的变化小于某个阈值，或者连续迭代中簇的成员没有变化，或者达到预设的迭代次数</li>
+<li>满足结束条件停止迭代</li>
 </ol>
-</li>
-</ul>
-</blockquote>
-<p><strong>自定义序列化接口（Writable）</strong></p>
-<blockquote>
-<p>​	在企业开发中往往常用的基本序列化类型不能满足所有需求，比如在Hadoop框架内部传递一个bean对象，那么该对象就需要实现序列化接口。<br>具体实现bean对象序列化步骤如下7步:</p>
-<ol>
-<li>必须实现Writable接口</li>
-<li>反序列化时，需要反射调用空参构造函数，所以必须有空参构造</li>
-</ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;public FlowBean() &#123;</span><br><span class="line">super();</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>重写序列化方法</li>
-</ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;@Override</span><br><span class="line">&gt;public void <span class="built_in">write</span>(DataOutput out) throws IOException &#123;</span><br><span class="line">out.writeLong(upFlow);</span><br><span class="line">out.writeLong(downFlow);</span><br><span class="line">out.writeLong(sumFlow);</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>重写反序列化方法</li>
-</ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;@Override</span><br><span class="line">&gt;public void readFields(DataInput <span class="keyword">in</span>) throws IOException &#123;</span><br><span class="line">upFlow = in.readLong();</span><br><span class="line">downFlow = in.readLong();</span><br><span class="line">sumFlow = in.readLong();</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>注意反序列化的顺序和序列化的顺序完全一致</li>
-<li>要想把结果显示在文件中，需要重写toString()，可用”\t”分开，方便后续用。</li>
-</ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;@Override</span><br><span class="line">&gt;public string toString()&#123;</span><br><span class="line"> <span class="keyword">return</span> upFlow + <span class="string">&quot;\t&quot;</span> + downFlow + <span class="string">&quot;\t&quot;</span> + sumFlow;</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="7">
-<li>如果需要将自定义的bean放在key中传输，则还需要实现Comparable接口，因为MapReduce框架中的Shuffle过程要求对key必须能排序。</li>
-</ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;@Override</span><br><span class="line">&gt;public int compareTo(FlowBean o) &#123;</span><br><span class="line">// 倒序排列，从大到小</span><br><span class="line"><span class="keyword">return</span> this.sumFlow &gt; o.getSumFlow() ? <span class="literal">-1</span> : <span class="number">1</span>;</span><br><span class="line">&gt;&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="2-FileInputFormat切片机制"><a href="#2-FileInputFormat切片机制" class="headerlink" title="2.FileInputFormat切片机制"></a>2.FileInputFormat切片机制</h2><p><strong>切片机制</strong></p>
-<blockquote>
-<ul>
-<li>简单地按照文件的内容长度进行切片</li>
-<li>切片大小默认等于block大小（block默认128M）</li>
-<li>切片时不考虑数据集整体，而是逐个针对每一个文件单独切片</li>
-</ul>
-</blockquote>
-<p><strong>具体步骤</strong> </p>
-<blockquote>
-<p>(1) 根据driver中设置的输入目录，找到数据存储的目录。<code>listStatus()</code>。</p>
-<p>(2) 开始遍历目录下的每一个文件，针对每个文件单独切片，不考虑数据整体。</p>
-<p>(3) 遍历第一个文件xx.txt</p>
-<p>​	a) 获取文件大小<code>fs.getLen(xx.txt)</code>。</p>
-<p>​	b) 默认情况下，<code>切片大小=blocksize</code>。</p>
-<p>​	c) 开始切片，例如有个<strong>300M</strong>的文件，<strong>形成第一个切片：word.bxt一D:128M 第2个切片：word.txt一128:256M 第3个切片：word.txt一256M:300M</strong>(每次切片时，都要判断切完剩下的部分是否大于块的<strong>1.1倍</strong>，不大于1.1倍就划分一块切片（如大于128m但小于140m）)。</p>
-<p>​	d) 将切片信息写到一个切片规划文件中<code>Job.split</code>。</p>
-<p>​	e) 数据切片只是在逻辑上对输入数据进行分片，并不会在磁盘上将其切分成分片进行存储。使用<code>inputSplit</code>只记录了分片的元数据信息，比如起始位置、长度以及所在的节点列表等。</p>
-<p>​	f) 注意：<strong>block是HDFS物理上存储的数据，切片是对数据逻辑上的划分</strong>。</p>
-<p>(4) 提交切片规划文件到<strong>YARN</strong>上，YARN上的<strong>MrAppMaster</strong>就可以根据切片规划文件计算开启<strong>MapTask</strong>的个数。</p>
-</blockquote>
-<h2 id="3-自定义InputFormat流程"><a href="#3-自定义InputFormat流程" class="headerlink" title="3.自定义InputFormat流程"></a>3.自定义InputFormat流程</h2><blockquote>
-<p>（1）自定义一个类继承FileInputFormat</p>
-<p>（2）改写RecordReader ，实现一次读取一个完整文件封装为KV</p>
-</blockquote>
-<h2 id="4-如何决定一个job的map和reduce的数量"><a href="#4-如何决定一个job的map和reduce的数量" class="headerlink" title="4.如何决定一个job的map和reduce的数量?"></a>4.如何决定一个job的map和reduce的数量?</h2><blockquote>
-<p>1）map数量</p>
-<p>splitSize&#x3D;max{minSize,min{maxSize,blockSize}}</p>
-<p>map数量由处理的数据分成的block数量决定default_num &#x3D; total_size &#x2F; split_size;</p>
-<p>2）reduce数量</p>
-<p>reduce的数量job.setNumReduceTasks(x);x 为reduce的数量。不设置的话默认为 1。</p>
-</blockquote>
-<h2 id="5-MapTask的个数由什么决定"><a href="#5-MapTask的个数由什么决定" class="headerlink" title="5.MapTask的个数由什么决定"></a>5.MapTask的个数由什么决定</h2><ul>
-<li>一个job的map阶段MapTask并行度（个数），由客户端提交job时的切片个数决定。</li>
-</ul>
-<h2 id="6-MapTask工作机制"><a href="#6-MapTask工作机制" class="headerlink" title="6.MapTask工作机制"></a>6.MapTask工作机制</h2><p><img src="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/1638779143473_MapTask%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.jpg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/walims1/BlogImage/images/1638779143473_MapTask%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="1638779143474_MapTask工作原理.jpg"></p>
-<ol>
-<li><strong>read阶段</strong>：Map Task通过用户编写的RecordReader ，从输入InputSplit中解析出一个个key&#x2F;value</li>
-<li><strong>map阶段</strong>：将解析出的key-value交给用户编写的map()函数进行处理，生成新的key-value</li>
-<li><strong>collect阶段</strong>：将map的数据写到环形缓冲区（分区）中</li>
-<li><strong>spill溢写阶段</strong>：环形缓冲区数据满80%后溢写磁盘，生成临时文件，溢写之前需要进行排序</li>
-<li><strong>combine阶段</strong>：合并所有临时文件（而不是执行Combiner业务逻辑）：归并排序，将一些多次产生的小文件进行合并，形成一个大文件</li>
-</ol>
-<p><strong>详细步骤</strong>：</p>
-<blockquote>
-<p>（1）Read阶段 ：Map Task通过用户编写的RecordReader ，从输入InputSplit中解析出一个个key&#x2F;value。</p>
-<p>（2）Map阶段：该节点主要是将解析出的key&#x2F;value交给用户编写map()函数处理 ，并产生一系列新的key&#x2F;value。</p>
-<p>（3）Collect收集阶段：在用户编写map()函数中，当数据处理完成后，一般会调用OutputCollector.collect()输出结果。在该函数内部 ，它会将生成的key&#x2F;value分区（调用Partitioner） ，并写入一个环形内存缓冲区中。</p>
-<p>（4）Spill阶段 ：即“溢写” ，当环形缓冲区满后 ，MapReduce会将数据写到本地磁盘上 ，生成一个临时文件。需要注意的是 ，将数据写入本地磁盘之前 ，先要对数据进行一次本地排序 ，并在必要时对数据进行合并、压缩等操作。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;溢写阶段详情：</span><br><span class="line">&gt;步骤1：利用快速排序算法对缓存区内的数据进行排序，排序方式是，先按照分区编号partition进行排序，然后按照</span><br><span class="line">&gt;key进行排序。这样 ，经过排序后 ，数据以分区为单位聚集在一起 ，且同一分区内所有数据按照key有序。</span><br><span class="line">&gt;步骤2：按照分区编号由小到大依次将每个分区中的数据写入任务工作目录下的临时文件output/spillN.out（N表示</span><br><span class="line">&gt;当前溢写次数）中。如果用户设置了Combiner ，则写入文件之前 ，对每个分区中的数据进行一次聚集操作。</span><br><span class="line">&gt;步骤3：将分区数据的元信息写到内存索引数据结构SpillRecord中 ，其中每个分区的元信息包括在临时文件中的偏</span><br><span class="line">&gt;移量、压缩前数据大小和压缩后数据大小。如果当前内存索引大小超过1MB ，则将内存索引写到文件output/spillN.out.index中。</span><br></pre></td></tr></table></figure>
-
-<p>（5）Combine阶段 ：当所有数据处理完成后 ，MapTask对所有临时文件进行一次合并 ，以确保最终只会生成一个</p>
-<p>数据文件。</p>
-<p>​	当所有数据处理完后 ，MapTask会将所有临时文件合并成一个大文件 ，并保存到文件output&#x2F;file.out中 ，同时生成相应的索引文件output&#x2F;file.out.index。</p>
-<p>​	在进行文件合并过程中 ，MapTask以分区为单位进行合并。对于某个分区 ，它将采用多轮递归合并的方式。每轮合 并io.sort.factor（默认100）个文件，并将产生的文件重新加入待合并列表中，对文件排序后，重复以上过程，直到最终得到一个大文件。</p>
-<p>​	让每个MapTask最终只生成一个数据文件，可避免同时打开大量文件和同时读取大量小文件产生的随机读取带来的开销。</p>
-</blockquote>
-<h2 id="7-ReduceTask工作机制"><a href="#7-ReduceTask工作机制" class="headerlink" title="7.ReduceTask工作机制"></a>7.ReduceTask工作机制</h2><blockquote>
-<p>（1）Copy阶段：ReduceTask从各个MapTask上远程拷贝一片数据，并针对某一片数据，如果其大小超过一定阈值，则写到磁盘上，否则直接放到内存中。</p>
-<p>（2）Merge阶段：在远程拷数据的同时，ReduceTask启动了两个后台线程对内存和磁盘上的文件进行合并，以防止内存使用过多或磁盘上文件过多。</p>
-<p>（3）Sort阶段：按照MapReduce语义，用户编写reduce()函数输入数据是按key进行聚集的一组数据。为了将key相同的数据聚在一起，Hadoop采用了基于排序的策略。由于各个MapTask已经实现对自己的处理结果进行了局部排序，因此，ReduceTask只需对所有数据进行一次归并排序即可。</p>
-<p>（4）Reduce阶段：reduce()函数将计算结果写到HDFS上。</p>
-</blockquote>
-<h2 id="8-请描述mapReduce有几种排序及排序发生的阶段"><a href="#8-请描述mapReduce有几种排序及排序发生的阶段" class="headerlink" title="8.请描述mapReduce有几种排序及排序发生的阶段"></a>8.请描述mapReduce有几种排序及排序发生的阶段</h2><h3 id="排序的分类"><a href="#排序的分类" class="headerlink" title="排序的分类"></a>排序的分类</h3><ul>
-<li><p>部分排序</p>
-<blockquote>
-<p>​	MapReduce根据输入记录的键对数据集排序。保证输出的每个文件内部排序。</p>
-</blockquote>
-</li>
-<li><p>全排序</p>
-<blockquote>
-<p>​	用Hadoop产生一个全局排序文件最简单的方法是使用一个分区。但该方法在处理大型文件时效率极低，因为一台机器必须处理所有输出文件，从而完全丧失了MapReduce所提供的并行架构。</p>
-<p>​	替代方案：首先创建一系列排好序的文件；其次，串联这些文件；最后，生成一个全局排序的文件。主要思路时使用一个分区来描述输出的全局排序。例如：可以为待分析文件创建3个分区 ，在第一分区中 ，记录的单词首字母a-g ，第二分区记录单词首字母h-n, 第三分区记录单词首字母o-z。  </p>
-</blockquote>
-</li>
-<li><p>辅助排序(GroupingComparator分组)</p>
-<blockquote>
-<p>​	Mapreduce框架在记录到达reduce之前按键对记录排序，但键所对应的值并没有被排序。甚至在不同的执行轮次中 ，这些值的排序也不固定 ，因为它们来自不同的map任务且这些map任务在不同轮次中完成时间各不相同。一般来说 ，大多数MapReduce程序会避免让reduce函数依赖于值的排序。但是 ，有时也需要通过特定的方法对键进行排序和分组等以实现对值的排序。</p>
-</blockquote>
-</li>
-<li><p>二次排序</p>
-<blockquote>
-<p>​	在自定义排序过程中 ，如果compareTo中的判断条件为两个即为二次排序。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="排序发生的阶段"><a href="#排序发生的阶段" class="headerlink" title="排序发生的阶段"></a>排序发生的阶段</h3><p>map阶段和reduce阶段的shuffle阶段都会发生一次</p>
-<ul>
-<li>一个是在Map side，发生在spill后，partition前</li>
-<li>一个是在Reduce side, 发生在copy后，reduce前</li>
-</ul>
-<h3 id="自定义排序WritableComparable"><a href="#自定义排序WritableComparable" class="headerlink" title="自定义排序WritableComparable"></a>自定义排序WritableComparable</h3><ul>
-<li><p>bean对象实现WritableComparable接口重写compareTo方法 ，就可以实现排序  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compareTo</span><span class="params">(FlowBean o)</span> &#123;</span><br><span class="line">	<span class="comment">// 倒序排列 ，从大到小</span></span><br><span class="line">	.sumFlow &gt; o.getSumFlow() ? -<span class="number">1</span> : <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="9-请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段"><a href="#9-请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段" class="headerlink" title="9.请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段?"></a>9.请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段?</h2><ul>
-<li><p><strong>工作流程：</strong>分区 ，排序 ，溢写 ，拷贝到对应reduce机器上 </p>
-</li>
-<li><p><strong>优化：</strong>增加combiner ，压缩溢写的文件。</p>
-</li>
-</ul>
-<h2 id="10-请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别"><a href="#10-请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别" class="headerlink" title="10.请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别?"></a>10.请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别?</h2><ul>
-<li>Combiner的意义就是对每一个maptask的输出进行局部汇总，以减小网络传输量。</li>
-<li>Combiner能够应用的前提是不能影响最终的业务逻辑，而且，Combiner的输出kv应该跟reducer的输入kv类型要对应起来。</li>
-<li>Combiner和reducer的区别在于运行的位置：<ul>
-<li>Combiner是在每一个maptask所在的节点运行；</li>
-<li>Reducer是接收全局所有Mapper的输出结果。</li>
-</ul>
-</li>
-</ul>
-<h2 id="11-如果没有定义partitioner-，那数据在被送达reducer前是如何被分区的？"><a href="#11-如果没有定义partitioner-，那数据在被送达reducer前是如何被分区的？" class="headerlink" title="11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？"></a>11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？</h2><p>如果没有自定义的 partitioning，则默认的 partition 算法。</p>
-<ul>
-<li><p>先对每一条数据的键(key)进行哈希运算</p>
-</li>
-<li><p>然后，将得到的哈希值对 Reducer 的总数进行取模运算 ，</p>
-</li>
-<li><p>取模运算的结果决定了每个键值对应该发送到哪个 Reducer,也就是分区号</p>
-</li>
-</ul>
-<h2 id="12-有可能使-Hadoop-任务输出到多个目录中么？如果可以-，怎么做？"><a href="#12-有可能使-Hadoop-任务输出到多个目录中么？如果可以-，怎么做？" class="headerlink" title="12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？"></a>12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？</h2><p>可以输出到多个目录中 ，采用自定义OutputFormat  </p>
-<ul>
-<li>实现步骤：</li>
-</ul>
-<p>​	（1）自定义outputformat</p>
-<p>​	（2）改写recordwriter ，具体改写输出数据的方法write()  </p>
 
   </div>
   
@@ -2783,10 +2606,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-27T21:37:47+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-08-12T17:35:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年6月27日</p>
+    <p>更新于：2024年8月12日</p>
   </a>
 </div>
 
@@ -2795,8 +2618,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>面试题</p></a></div>
-  <span hidden itemprop="keywords">Hadoop 面试题</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>算法</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>机器学习</p></a></div>
+  <span hidden itemprop="keywords">算法 机器学习</span>
 
 
         
@@ -2809,7 +2632,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/&title=Hadoop面试题之MapReduce - 码猿不正经&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/&title=机器学习算法-KMeans聚类 - 码猿不正经&summary="
           
           >
           
@@ -2821,7 +2644,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/&title=Hadoop面试题之MapReduce - 码猿不正经&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/&title=机器学习算法-KMeans聚类 - 码猿不正经&summary="
           
           >
           
@@ -2833,7 +2656,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/&title=Hadoop面试题之MapReduce - 码猿不正经&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/&title=机器学习算法-KMeans聚类 - 码猿不正经&summary="
           
           >
           
@@ -2866,22 +2689,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BYarn/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hadoop面试题之Yarn</p>
-          <p class='content'>1.简述Hadoop1与Hadoop2的架构异同
-加入了yarn解决了资源调度的问题
-加入了对zookeeper的支持实现比较可靠的高可用
+        <a class='prev' href='/2024/06/21/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHDFS/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hadoop面试题之HDFS</p>
+          <p class='content'>1.HDFS的存储机制（读写流程）总体：
 
-2.为什么会产生yarn,它解决了什么问题，有什么优...</p>
+按块（block）存储，默认按照128M大小进行文件数据拆分，将不同拆分的块数据存储在不同datanode服务器上
+三副本机制：为了保证HDFS的数据...</p>
         </a>
       
       
-        <a class='next' href='/2024/06/23/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BHadoop%E4%BC%98%E5%8C%96/'>
-          <p class='title'>Hadoop面试题之Hadoop优化<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>1.MapReduce跑得慢的原因Mapreduce程序效率的瓶颈在于两点：
-
-计算机性能：CPU、内存、磁盘健康状况以及网络速度都可能影响MapReduce任务的执行效率。
-I&#x2F;O ...</p>
+        <a class='next' href='/2024/03/24/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/'>
+          <p class='title'>排序算法-快速排序<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>快速排序​	快速排序（Quick Sort）是一种高效的排序算法，由英国计算机科学家托尼·霍尔（Tony Hoare）在1960年提出。它采用分治法（Divide and Conquer）的策略...</p>
         </a>
       
     </div>
@@ -2897,7 +2716,7 @@ I&#x2F;O ...</p>
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2939,7 +2758,7 @@ I&#x2F;O ...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%B0%88%E8%B0%88Hadoop%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89bean%E5%AF%B9%E8%B1%A1%E5%AE%9E%E7%8E%B0%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%9F"><span class="toc-text">1. 谈谈Hadoop序列化和反序列化及自定义bean对象实现序列化？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-FileInputFormat%E5%88%87%E7%89%87%E6%9C%BA%E5%88%B6"><span class="toc-text">2.FileInputFormat切片机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89InputFormat%E6%B5%81%E7%A8%8B"><span class="toc-text">3.自定义InputFormat流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E4%B8%80%E4%B8%AAjob%E7%9A%84map%E5%92%8Creduce%E7%9A%84%E6%95%B0%E9%87%8F"><span class="toc-text">4.如何决定一个job的map和reduce的数量?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MapTask%E7%9A%84%E4%B8%AA%E6%95%B0%E7%94%B1%E4%BB%80%E4%B9%88%E5%86%B3%E5%AE%9A"><span class="toc-text">5.MapTask的个数由什么决定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-MapTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">6.MapTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-ReduceTask%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">7.ReduceTask工作机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E6%9C%89%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E5%8F%8A%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">8.请描述mapReduce有几种排序及排序发生的阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">排序的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E5%8F%91%E7%94%9F%E7%9A%84%E9%98%B6%E6%AE%B5"><span class="toc-text">排序发生的阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8FWritableComparable"><span class="toc-text">自定义排序WritableComparable</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B7%E6%8F%8F%E8%BF%B0mapReduce%E4%B8%ADshuffle%E9%98%B6%E6%AE%B5%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96shuffle%E9%98%B6%E6%AE%B5"><span class="toc-text">9.请描述mapReduce中shuffle阶段的工作流程，如何优化shuffle阶段?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%AF%B7%E6%8F%8F%E8%BF%B0MapReduce%E4%B8%ADcombiner%E7%9A%84%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E4%B8%80%E8%88%AC%E4%BD%BF%E7%94%A8%E6%83%85%E6%99%AF%EF%BC%8C%E5%93%AA%E4%BA%9B%E6%83%85%E5%86%B5%E4%B8%8D%E9%9C%80%E8%A6%81%EF%BC%8C%E5%8F%8A%E5%92%8Creduce%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">10.请描述MapReduce中combiner的作用是什么，一般使用情景，哪些情况不需要，及和reduce的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%AE%9A%E4%B9%89partitioner-%EF%BC%8C%E9%82%A3%E6%95%B0%E6%8D%AE%E5%9C%A8%E8%A2%AB%E9%80%81%E8%BE%BEreducer%E5%89%8D%E6%98%AF%E5%A6%82%E4%BD%95%E8%A2%AB%E5%88%86%E5%8C%BA%E7%9A%84%EF%BC%9F"><span class="toc-text">11.如果没有定义partitioner ，那数据在被送达reducer前是如何被分区的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E6%9C%89%E5%8F%AF%E8%83%BD%E4%BD%BF-Hadoop-%E4%BB%BB%E5%8A%A1%E8%BE%93%E5%87%BA%E5%88%B0%E5%A4%9A%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%AD%E4%B9%88%EF%BC%9F%E5%A6%82%E6%9E%9C%E5%8F%AF%E4%BB%A5-%EF%BC%8C%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F"><span class="toc-text">12.有可能使  Hadoop 任务输出到多个目录中么？如果可以 ，怎么做？</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#KMeans%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95"><span class="toc-text">KMeans聚类算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%AD%A5%E9%AA%A4"><span class="toc-text">算法步骤</span></a></li></ol>
     </div>
   </section>
 
@@ -3620,7 +3439,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/Hadoop面试题/","name":"Hadoop面试题"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/06/27/面试题/Hadoop面试题之MapReduce/","name":"Hadoop面试题之MapReduce"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hadoop面试题之MapReduce","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/06/27/%E9%9D%A2%E8%AF%95%E9%A2%98/Hadoop%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B9%8BMapReduce/","wordCount":0,"datePublished":"2024-06-27T11:40:51.000Z","dateModified":"2024-06-27T13:37:47.237Z","articleSection":"Hadoop面试题","keywords":"Hadoop,面试题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","sameAs":["https://github.com/volantis-x"],"description":"walims的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://walims.xyz/","name":"码猿不正经"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/算法/","name":"算法"}},{"@type":"ListItem","position":2,"item":{"@id":"https://walims.xyz/categories/算法/机器学习/","name":"机器学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://walims.xyz/2024/03/29/算法/机器学习算法-KMeans聚类/","name":"机器学习算法-KMeans聚类"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"码猿不正经","url":"https://walims.xyz/","keywords":null,"description":"walims的个人博客","author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/","description":"walims的个人博客"},"publisher":{"@type":"Organization","name":"码猿不正经","url":"https://walims.xyz/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://walims.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"机器学习算法-KMeans聚类","description":"walims的个人博客","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/"},"author":{"@type":"Person","name":"walims","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://walims.xyz/"},"publisher":{"@type":"Organization","name":"码猿不正经","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://walims.xyz/2024/03/29/%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95-KMeans%E8%81%9A%E7%B1%BB/","wordCount":0,"datePublished":"2024-03-29T11:40:59.000Z","dateModified":"2024-08-12T09:35:49.985Z","articleSection":"算法","keywords":"算法,机器学习","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
